@@ -9,6 +9,19 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<style>
+			
+			
+		</style>
+		
+		<script>
+			$(document).ready(function(){
+				$('[data-toggle="tooltip"]').tooltip(); 
+			});
+		</script>
+		
 		<!-- <style>
 		body {
 			position: relative; 
@@ -22,7 +35,7 @@
 			<div class="container-fluid">
 				<center>
 					<h1 class="display-1">Andrei Biswas</h1>
-					<p><h4><small>Lovingly known as <kbd>Little Endian</kbd></h4></small></p>
+					<p><h4><small>Lovingly known as <kbd data-toggle="tooltip" data-placement="right" title="Also means that the least significant byte is stored first in computer memory.">Little Endian</kbd></h4></small></p>
 					<p>A musically enthused computer engineer with a passion to engineer the future.</p>
 				</center>
 			</div>
@@ -47,11 +60,7 @@
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#myMusic">My Music</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#contactMe">Contact Me</a>
-				</li>
-			
+				</li>			
 			</ul>
 			</div>
 		</nav> 
@@ -65,18 +74,18 @@
 					My journey in this field thus far inspires me to help solve real-world problems through the application of technology and music.</p>
 			</div>
 		</div>
-		
-		<div id="resume" class="container-fluid bg-light" style="padding-top:50px;padding-bottom:50px" background-color="#eee">
+				
+		<div id="resume" class="container-fluid bg-light" style="padding-top:50px;padding-bottom:100px" background-color="#eee">
 			<div class="container">
-				<h1 class="text-center" style="padding-bottom:30px">Resume</h1>
-					<div id="accordion">
+				<h1 class="text-center" style="padding-bottom:50px">Resume</h1>
+					<div id="accordion" style="padding-bottom:80px">
 						<div class="card">
 							<div class="card-header">
-								<a class="card-link" data-toggle="collapse" href="#collapseOne">
+								<a class="collapsed card-link" data-toggle="collapse" href="#collapseOne">
 									Experience
 								</a>
 							</div>
-							<div id="collapseOne" class="collapse show" data-parent="#accordion">
+							<div id="collapseOne" class="collapse" data-parent="#accordion">
 								<div class="card-body">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 								</div>
@@ -131,49 +140,74 @@
 							</div>
 						</div>
 					</div>
+					<a href="download/Andrei_Biswas_CMPE_Resume.pdf" download="Andrei Biswas Resume">
+						<center>
+						<button type="button" class="btn btn-default"><i class="material-icons" style="font-size:36px; vertical-align: middle;">get_app</i><span>Download Resume</span></button>
+						</center>
+					</a>
 			</div>
 		</div>
 		
-		<div id="myMusic" class="container-fluid" style="padding-top:50px;padding-bottom:50px">
+		<div id="myMusic" class="container-fluid" style="padding-top:50px;padding-bottom:100px">
 			<div class="container">
-				<h1 class="text-center" style="padding-bottom:30px">My Music</h1>
-					
-					<div class="card-deck">
-						<!-- TRACKS -->
-						<div class="card bg-light">
-							<div class="card-body text-center">
-								<p class="card-text">Tracks</p>
-								<!-- Broken Aspirations and Incomplete Wishes -->
+				<h1 class="text-center" style="padding-bottom:50px">My Music</h1>
+					<div class="row">
+					<div class="col">
+					<div id="accordionTracks">
+						<div class="card">
+							<div class="card-header">
+								<a class="collapsed card-link" data-toggle="collapse" href="#collapseTrack">
+									Tracks
+								</a>
+								<div id="collapseTrack" class="collapse" data-parent="#accordionTracks">
+									<div class="card-body">
+										<!-- Broken Aspirations and Incomplete Wishes -->
 								<iframe width="100%" height="225" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/439998393&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 								<!-- Midnight Drives (Instrumental) -->
 								<iframe width="100%" height="225" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/439998381&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-							</div>
-						</div>
-						<!-- SETS -->
-						<div class="card bg-light">
-							<div class="card-body text-center">
-								<p class="card-text">DJ Mixes</p>
-								<!-- Bonne Chance set -->
-				<!-- <iframe width="100%" height="100%" src="https://www.mixcloud.com/widget/iframe/?light=1&feed=%2FRIT_EDM_Family%2Frit-edm-family-set-bonne-chance-andrei-friday-16-2018%2F" frameborder="0" ></iframe> -->
-				<iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FRIT_EDM_Family%2Frit-edm-family-set-bonne-chance-andrei-friday-16-2018%2F" frameborder="0" ></iframe>
-				<!-- L'Avenir set -->
-				<iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FRIT_EDM_Family%2Flavenir-edm-club-mix-andreis-october-set%2F" frameborder="0" ></iframe>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
+					</div>
+					<div class="col">
+					<div id="accordionSet">
+						<div class="card">
+							<div class="card-header">
+								<a class="collapsed card-link" data-toggle="collapse" href="#collapseSet">
+									Sets
+								</a>
+								<div id="collapseSet" class="collapse" data-parent="#accordionSet">
+									<div class="card-body">
+										<!-- Bonne Chance set -->
+										<!-- <iframe width="100%" height="100%" src="https://www.mixcloud.com/widget/iframe/?light=1&feed=%2FRIT_EDM_Family%2Frit-edm-family-set-bonne-chance-andrei-friday-16-2018%2F" frameborder="0" ></iframe> -->
+										<iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FRIT_EDM_Family%2Frit-edm-family-set-bonne-chance-andrei-friday-16-2018%2F" frameborder="0" ></iframe>
+										<!-- L'Avenir set -->
+										<iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2FRIT_EDM_Family%2Flavenir-edm-club-mix-andreis-october-set%2F" frameborder="0" ></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+					</div>
+				</div>
+			</div>
+					
+		
+		<footer class="footer bg-light" style="padding-top:100px; padding-bottom:100px">
+			<div class="container">
+				<!-- <span class="text-muted">hello world this is a footer.</span> -->
 				
-				
-				
+				<a href="#"><i class="icon-social-facebook icons"></i></a>
+				<a href="#"><i class="icon-social-linkedin icons"></i></a>
+				<a href="#"><i class="icon-social-github icons"></i></a>
+				<a href="#"><i class="icon-social-soundcloud icons"></i></a>
+				<a href="#"><i class="icon-social-spotify icons"></i></a>
 				
 			</div>
-		</div>
-		
-		<div id="contactMe" class="container-fluid bg-light" style="padding-top:50px;padding-bottom:50px">
-			<div class="container">
-				<h1 class="text-center" style="padding-bottom:30px">Contact Me</h1>
-			</div>		
-		</div>
-		
+		</footer>
 		
 		
 			
