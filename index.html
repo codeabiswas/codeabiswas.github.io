@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 		
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 		<link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Megrim|Raleway|Rajdhani">
@@ -22,10 +23,16 @@
 
       h1, a{
       	font-family: 'Rajdhani', serif;
+
+
       }
+      .tooltip-inner {
+    max-width: 250px;
+    /* If max-width does not work, try using width instead */
+    width: 250px; 
+}
 
-
-
+	
     </style>
 		
 		<style>
@@ -39,7 +46,10 @@
 			$(document).ready(function(){
 				$('[data-toggle="tooltip"]').tooltip(); 
 			});
+
 		</script>
+
+
 			
 		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -186,7 +196,8 @@
 									<div class="row" style="padding-left: 15px; padding-right: 15px; padding-top: 10px;">
 											
 											<p class="text-left"><i class="icon-arrow-right icons" style="font-size:12px; color:#252624; vertical-align:bottom;"></i>Cumulative GPA: 3.65/4.00</p>
-											
+
+
 											<p class="text-left"><i class="icon-arrow-right icons" style="font-size:12px; color:#252624; vertical-align:bottom;"></i>Computer Engineering GPA: 4.00/4.00</p>
 									</div>
 									<div id="coursesTakenAccordion">
@@ -201,42 +212,115 @@
 									<div class="class-header">
 											<p class="text-left" style="font-size: 18px;"><strong>Mathematics</strong></p>
 									</div>
-									<i class="icon-arrow-right icons" style="font-size:16px; color:#252624; vertical-align:middle;"></i>	Multivariable Calculus
+									<i class="icon-arrow-down-circle icons" style="font-size:12px; color:#252624; vertical-align:top;"></i>	<span data-toggle="collapse" data-target="#collapsedMulti">Multivariable Calculus</span>
+									<div class="collapse" id="collapsedMulti">
+  										<div class="card border-right-0 border-left-0 border-top-0 border-bottom-0" style="margin-left: 15px; margin-right: 15px;">
+  											<hr>
+    										This course is principally a study of the calculus of functions of two or more variables, but also includes the study of vectors, vector-valued functions and their derivatives. The course covers limits, partial derivatives, multiple integrals, and includes applications in physics.
+  										</div>
+									</div>
+
 									<hr>
-									<i class="icon-arrow-right icons" style="font-size:16px; color:#252624; vertical-align:middle;"></i>	Differential Equations
+									<i class="icon-arrow-down-circle icons" style="font-size:12px; color:#252624; vertical-align:top;"></i>	<span data-toggle="collapse" data-target="#collapsedDiffEq">Differential Equations</span>
+									<div class="collapse" id="collapsedDiffEq">
+  										<div class="card border-right-0 border-left-0 border-top-0 border-bottom-0" style="margin-left: 15px; margin-right: 15px;">
+  											<hr>
+    										This course is an introduction to the study of ordinary differential equations and their applications. Topics include solutions to first order equations and linear second order equations, method of undetermined coefficients, variation of parameters, linear independence and the Wronskian, vibrating systems, and Laplace transforms.
+  										</div>
+									</div>
 									<hr>
-									<i class="icon-arrow-right icons" style="font-size:16px; color:#252624; vertical-align:middle;"></i>	Discrete Math for Computing
+									<i class="icon-arrow-down-circle icons" style="font-size:12px; color:#252624; vertical-align:top;"></i>	<span data-toggle="collapse" data-target="#collapsedDiscrete">Discrete Mathematics for Computing</span>
+									<div class="collapse" id="collapsedDiscrete">
+  										<div class="card border-right-0 border-left-0 border-top-0 border-bottom-0" style="margin-left: 15px; margin-right: 15px;">
+  											<hr>
+    										This course introduces students to ideas and techniques from discrete mathematics that are widely used in Computer Science. Students will learn about the fundamentals of propositional and predicate calculus, set theory, relations, recursive structures and counting. This course will help increase students’ mathematical sophistication and their ability to handle abstract problems.
+  										</div>
+									</div>
 									<hr>
-									<i class="icon-arrow-right icons" style="font-size:16px; color:#252624; vertical-align:middle;"></i>	Linear Algebra
+									<i class="icon-arrow-down-circle icons" style="font-size:12px; color:#252624; vertical-align:top;"></i>	<span data-toggle="collapse" data-target="#collapsedLinear">Linear Algebra</span>
+									<div class="collapse" id="collapsedLinear">
+  										<div class="card border-right-0 border-left-0 border-top-0 border-bottom-0" style="margin-left: 15px; margin-right: 15px;">
+  											<hr>
+    										This course is an introduction to the basic concepts of linear algebra, and techniques of matrix manipulation. Topics include linear transformations, Gaussian elimination, matrix arithmetic, determinants, vector spaces, linear independence, basis, null space, row space, and column space of a matrix, eigenvalues, eigenvectors, change of basis, similarity and diagonalization. Various applications are studied throughout the course.
+  										</div>
+									</div>
 									<hr>
-									<i class="icon-arrow-right icons" style="font-size:16px; color:#252624; vertical-align: middle;"></i>	Probability and Statistics
+									<i class="icon-arrow-down-circle icons" style="font-size:12px; color:#252624; vertical-align:top;"></i>	<span data-toggle="collapse" data-target="#collapsedProbAndStats">Probability and Statistics I </span>
+									<div class="collapse" id="collapsedProbAndStats">
+  										<div class="card border-right-0 border-left-0 border-top-0 border-bottom-0" style="margin-left: 15px; margin-right: 15px;">
+  											<hr>
+    										This course introduces sample spaces and events, axioms of probability, counting techniques, conditional probability and independence, distributions of discrete and continuous random variables, joint distributions (discrete and continuous), the central limit theorem, descriptive statistics, interval estimation, and applications of probability and statistics to real-world problems. 
+  										</div>
+									</div>
 									<hr style="height:1px; background-color:#333;">
 									<div class="class-header">
 											<p class="text-left" style="font-size: 18px;"><strong>Computer Engineering</strong></p>
 									</div>
-									<i class="icon-arrow-right icons" style="font-size:16px; color:#252624; vertical-align:middle;"></i>	Introduction to Computer Engineering with Lab
+									<i class="icon-arrow-down-circle icons" style="font-size:12px; color:#252624; vertical-align:top;"></i>	<span data-toggle="collapse" data-target="#collapsedIntroCE">Introduction to Computer Engineering with Lab</span>
+									<div class="collapse" id="collapsedIntroCE">
+  										<div class="card border-right-0 border-left-0 border-top-0 border-bottom-0" style="margin-left: 15px; margin-right: 15px;">
+  											<hr>
+    										This course overviews the field of computer engineering and provides an appreciation of the computer engineering curriculum. Fundamental concepts of computers, computing and engineering design are introduced. Topics include basic circuits, number systems, digital logic, computer organization, programming in the Matlab environment, teamwork, communication skills, ethics and professionalism, historical background and global, societal and environmental issues related to computers. Lab exercises familiarize students with lab equipment, experiments and data analysis.
+  										</div>
+									</div>
 									<hr>
-									<i class="icon-arrow-right icons" style="font-size:16px; color:#252624; vertical-align:middle;"></i>	Digital System Design I with Lab
+									<i class="icon-arrow-down-circle icons" style="font-size:12px; color:#252624; vertical-align:top;"></i>	<span data-toggle="collapse" data-target="#collapsedDSDI">Digital System Design I with Lab</span>
+									<div class="collapse" id="collapsedDSDI">
+  										<div class="card border-right-0 border-left-0 border-top-0 border-bottom-0" style="margin-left: 15px; margin-right: 15px;">
+  											<hr>
+    										The course covers the specification, analysis, and design of basic digital systems, including the design of combinational and sequential circuits using basic logic components: AND, OR, INV, NAND, NOR, and XOR. Standard modules, such as decoders, multiplexers, shifter registers, adders, and counters, will be analyzed. Lectures will discuss fundamental design methodologies using Karnaugh Maps as well as Mealy and Moore state machines. The laboratory provides hands-on experiences of the design, implementation, and testing of digital systems using SSI, MSI, and FPGA components as well as CAD tools.
+  										</div>
+									</div>
 									<hr>
-									<i class="icon-arrow-right icons" style="font-size:16px; color:#252624; vertical-align:middle;"></i>	Digital System Design II with Lab
+									<i class="icon-arrow-down-circle icons" style="font-size:12px; color:#252624; vertical-align:top;"></i>	<span data-toggle="collapse" data-target="#collapsedDSDII">Digital System Design II with Lab</span>
+									<div class="collapse" id="collapsedDSDII">
+  										<div class="card border-right-0 border-left-0 border-top-0 border-bottom-0" style="margin-left: 15px; margin-right: 15px;">
+  											<hr>
+    										This course presents modern approaches to the design, modeling and testing of digital system. Topics covered are: VHDL and Verilog HDL as hardware description languages (HDLs), simulation techniques, design synthesis, verification methods, and implementation with field programmable gate arrays (FPGAs). Combinational and both the synchronous and asynchronous sequential circuits are studied. Testing and design for testability techniques are emphasized and fault tolerant and fail safe design concepts are introduced. Laboratory projects that enable students gain hands-on experience are required. The projects include complete design flow: design of the system, modeling using HDLs, simulation, synthesis and verification.
+  										</div>
+									</div>
 									<hr>
-									<i class="icon-arrow-right icons" style="font-size:16px; color:#252624; vertical-align:middle;"></i>	Assembly Programming Language with Lab
+									<i class="icon-arrow-down-circle icons" style="font-size:12px; color:#252624; vertical-align:top;"></i>	<span data-toggle="collapse" data-target="#collapsedAssembly">Assembly Programming Language with Lab</span>
+									<div class="collapse" id="collapsedAssembly">
+  										<div class="card border-right-0 border-left-0 border-top-0 border-bottom-0" style="margin-left: 15px; margin-right: 15px;">
+  											<hr>
+    										This course introduces embedded systems, along with fundamental computer organization, assembly language programming, and mixed language programming with C and assembly. Using a modern microcontroller and embedded systems IDE, such as the ARM Cortex-M0+ and Keil Microcontroller Development Kit, the course covers embedded programming concepts and interface modules, as well as addressing methods, machine instructions, assembler directives, macro definitions, code relocatability, subroutine linkage, data structures, I/O programming, exception processing, and interrupts. Program design techniques necessary to write efficient, maintainable device drivers are considered.
+  										</div>
+									</div>
 
 									<hr style="height:1px; background-color:#333;">
 									
 									<div class="class-header">
 											<p class="text-left" style="font-size: 18px;"><strong>Electrical Engineering</strong></p>
 									</div>
-									<i class="icon-arrow-right icons" style="font-size:16px; color:#252624; vertical-align:middle;"></i>	Circuits I with Lab
+									<i class="icon-arrow-down-circle icons" style="font-size:12px; color:#252624; vertical-align:top;"></i>	<span data-toggle="collapse" data-target="#collapsedCircuitsI">Circuits I with Lab</span>
+									<div class="collapse" id="collapsedCircuitsI">
+  										<div class="card border-right-0 border-left-0 border-top-0 border-bottom-0" style="margin-left: 15px; margin-right: 15px;">
+  											<hr>
+    										Covers basics of DC circuit analysis starting with the definition of voltage, current, resistance, power and energy. Linearity and superposition, together with Kirchhoff's laws, are applied to analysis of circuits having series, parallel and other combinations of circuit elements. Thevenin, Norton and maximum power transfer theorems are proved and applied. Circuits with ideal op-amps are introduced. Inductance and capacitance are introduced and the transient response of RL, RC and RLC circuits to step inputs is established. Practical aspects of the properties of passive devices and batteries are discussed, as are the characteristics of battery-powered circuitry. The laboratory component incorporates use of both computer and manually controlled instrumentation including power supplies, signal generators and oscilloscopes to reinforce concepts discussed in class as well as circuit design and simulation software.
+  										</div>
+									</div>
 
 									<hr style="height:1px; background-color:#333;">
 									
 									<div class="class-header">
 											<p class="text-left" style="font-size: 18px;"><strong>Computer Science</strong></p>
 									</div>
-									<i class="icon-arrow-right icons" style="font-size:16px; color:#252624; vertical-align:middle;"></i>	Computer Science I
+									<i class="icon-arrow-down-circle icons" style="font-size:12px; color:#252624; vertical-align:top;"></i>	<span data-toggle="collapse" data-target="#collapsedCSI">Computer Science I</span>
+									<div class="collapse" id="collapsedCSI">
+  										<div class="card border-right-0 border-left-0 border-top-0 border-bottom-0" style="margin-left: 15px; margin-right: 15px;">
+  											<hr>
+    										This course serves as an introduction to computational thinking using a problem-centered approach. Specific topics covered include: expression of algorithms in pseudo code and a programming language; functional and imperative programming techniques; control structures; problem solving using recursion; basic searching and sorting; elementary data structures such as lists, trees, and graphs; and correctness, testing and debugging. Assignments (both in class and for homework) requiring a pseudo code solution and an implementation are an integral part of the course.
+  										</div>
+									</div>
 									<hr>
-									<i class="icon-arrow-right icons" style="font-size:16px; color:#252624; vertical-align:middle;"></i>	Computer Science II
+									<i class="icon-arrow-down-circle icons" style="font-size:12px; color:#252624; vertical-align:top;"></i>	<span data-toggle="collapse" data-target="#collapsedCSII">Computer Science II</span>
+									<div class="collapse" id="collapsedCSII">
+  										<div class="card border-right-0 border-left-0 border-top-0 border-bottom-0" style="margin-left: 15px; margin-right: 15px;">
+  											<hr>
+    										This course delves further into problem solving by continuing the discussion of data structure use and design, but now from an object-oriented perspective. Key topics include more information on tree and graph structures, nested data structures, objects, classes, inheritance, interfaces, object-oriented collection class libraries for abstract data types (e.g. stacks, queues, maps, and trees), and static vs. dynamic data types. Concepts of object-oriented design are a large part of the course. Software qualities related to object orientation, namely cohesion, minimal coupling, modifiability, and extensibility, are all introduced in this course, as well as a few elementary object-oriented design patterns. Input and output streams, graphical user interfaces, and exception handling are covered. Students will also be introduced to a modern integrated software development environment (IDE). 
+  										</div>
+									</div>
 									</div>
 									
 								</div>
@@ -255,20 +339,44 @@
 									<div class="card-body">
 									
 									<div class="class-header">
-											<p class="text-left" style="font-size: 18px;"><strong>Computer Engineering</strong></p>
+											<p class="text-left" style="font-size: 12px;"><strong>Computer Engineering</strong></p>
 									</div>
-									<i class="icon-arrow-right icons" style="font-size:16px; color:#252624; vertical-align:middle;"></i>	Computer Organization
+									<i class="icon-arrow-down-circle icons" style="font-size:12px; color:#252624; vertical-align:top;"></i>	<span data-toggle="collapse" data-target="#collapsedCompOrg">Computer Organization</span>
+									<div class="collapse" id="collapsedCompOrg">
+  										<div class="card border-right-0 border-left-0 border-top-0 border-bottom-0" style="margin-left: 15px; margin-right: 15px;">
+  											<hr>
+    										Provides an understanding of the information transfer and transformations that occur in a computer, with emphasis on the relations between computer architecture and organization. Topics include design levels and their respective primitives, modules and descriptive media, register transfer and micro-operations, basic computer organization and design, central processor organization, control unit and microprogramming, memory organization, input-output organization, computer architecture defining the hardware/software interface, and from architecture to organization (one to many).
+  										</div>
+									</div>
 									<hr>
-									<i class="icon-arrow-right icons" style="font-size:16px; color:#252624; vertical-align:middle;"></i>	Applied Programming
+									<i class="icon-arrow-down-circle icons" style="font-size:12px; color:#252624; vertical-align:top;"></i>	<span data-toggle="collapse" data-target="#collapsedApplied">Applied Programming</span>
+									<div class="collapse" id="collapsedApplied">
+  										<div class="card border-right-0 border-left-0 border-top-0 border-bottom-0" style="margin-left: 15px; margin-right: 15px;">
+  											<hr>
+    										An introduction to classical algorithms used in the solution of numerical problems encountered in science and engineering. The C language will be introduced as a tool for implementing these algorithms. Topics include an introduction to C, computer number representation and roundoff error, algorithms for finding roots of nonlinear equations, interpolation, numerical differentiation and integration, function approximation and data fitting solutions to systems of linear equations, and general matrix manipulation.
+  										</div>
+									</div>
 									
 									<hr style="height:1px; background-color:#333;">
 									
 									<div class="class-header">
 											<p class="text-left" style="font-size: 18px;"><strong>Electrical Engineering</strong></p>
 									</div>
-									<i class="icon-arrow-right icons" style="font-size:16px; color:#252624; vertical-align:middle;"></i>	Circuits II
+									<i class="icon-arrow-down-circle icons" style="font-size:12px; color:#252624; vertical-align:top;"></i>	<span data-toggle="collapse" data-target="#collapsedCircuitsII">Circuits II</span>
+									<div class="collapse" id="collapsedCircuitsII">
+  										<div class="card border-right-0 border-left-0 border-top-0 border-bottom-0" style="margin-left: 15px; margin-right: 15px;">
+  											<hr>
+    										This course covers the fundamentals of AC circuit analysis starting with the study of sinusoidal steady-state solutions for circuits in the time domain. The complex plane is introduced along with the concepts of complex exponential functions, phasors, impedances and admittances. Nodal, loop and mesh methods of analysis as well as Thevenin and related theorems are applied to the complex plane. The concept of complex power is developed. The analysis of mutual induction as applied to coupled-coils. Linear, ideal and non-ideal transformers are introduced. Complex frequency analysis is introduced to enable discussion of transfer functions, frequency dependent behavior, Bode plots, resonance phenomenon and simple filter circuits. Two-port network theory is developed and applied to circuits and interconnections.
+  										</div>
+									</div>
 									<hr>
-									<i class="icon-arrow-right icons" style="font-size:16px; color:#252624; vertical-align:middle;"></i>	Electronics I with Lab
+									<i class="icon-arrow-down-circle icons" style="font-size:12px; color:#252624; vertical-align:top;"></i>	<span data-toggle="collapse" data-target="#collapsedElectronicsI">Electronics I with Lab</span>
+									<div class="collapse" id="collapsedElectronicsI">
+  										<div class="card border-right-0 border-left-0 border-top-0 border-bottom-0" style="margin-left: 15px; margin-right: 15px;">
+  											<hr>
+    										This is the first course in a two-course sequence in analog electronic circuit design. The course covers the following topics: (1) Basic MOSFET current-voltage characteristics; (2) DC and small-signal analysis and design of Metal-oxide-semiconductor (MOS) devices and circuits, including single-stage MOS amplifier configurations; (3) DC biasing circuits, such as basic current sources and current mirrors; (4) Two-transistor amplifier stages, such as differential amplifiers, cascode amplifiers, and output stages; (5) Analysis and design of multistage amplifiers; (6) Frequency response of single and multistage amplifiers; (7) Semiconductor diodes and diode circuits, including rectifying and clamping circuits, as well as Zener diode-based voltage regulation; (8) Ideal operational amplifier (op amp) circuits in non-inverting and inverting configurations.
+  										</div>
+									</div>
 									</div>
 								</div>
 							</div>
@@ -514,6 +622,11 @@
 					<center>
 						<button type="button" class="btn btn-s"><i class="icon-arrow-down-circle icons" style="font-size:24px; vertical-align: middle;"></i><span> <a href="download/Andrei_Biswas_CMPE_Resume.pdf" download="Andrei Biswas Resume">Download Resume</a></span></button>
 					</center>
+					<center>
+						<em>
+							<p style="margin-top: 20px; font-family: Megrim">All the courses description information gathered from <a href="https://tigercenter.rit.edu" target="_blank">here</a>.</p>
+						</em>
+					</center>
 					
 			</div>
 		</div>
@@ -603,7 +716,6 @@
 			<!-- Copyright -->
 		</footer>
 		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 		
