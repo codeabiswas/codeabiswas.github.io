@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
-@import url('https://fonts.googleapis.com/css?family=Megrim');
+/* @import url('https://fonts.googleapis.com/css?family=Megrim'); */
 
 body {
     padding:0px;
@@ -10,6 +10,18 @@ body {
     height:100vh;
     overflow:hidden;
     font-family: 'Josefin Sans', sans-serif;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #fff;
+    margin: 1em 0;
+    padding: 0;
+}
+img.resize{
+    max-width:11px;
+    max-height:11px;
 }
 #loading {
     width: 100vw;
@@ -83,13 +95,13 @@ body {
 #middle h1 {
     color:rgb(4, 93, 28);
     font-size:70px;
-    font-family: 'Megrim';
-    /* text-decoration:underline; */
+    /* font-family: 'Megrim'; */
+    font-weight:normal;
+    text-decoration:underline overline;
 }
 #middle h2 {
     color:rgb(255, 255, 255);
     font-size:20px;
-    font-family: 'Megrim';
     /* text-decoration:underline; */
 }
 #about {
@@ -128,7 +140,7 @@ body {
     transition:0.4s ease-in-out;
     border-radius:0px 0px 100px 100px;
 }
-#contact {
+#music {
     width:10vw;
     height:10vw;
     text-align:center;
@@ -153,7 +165,7 @@ body {
     background:rgba(4,93,28,1);/*rgba(255,50,50,0.9);*/
     cursor:pointer;
 }
-#contact:hover {
+#music:hover {
     background:rgba(4,93,28,1);/*rgba(255,50,50,0.9);*/
     cursor:pointer;
 }
@@ -202,11 +214,15 @@ body {
 .directionarrow{
     color:#fff;
 }
+.usedtech{
+    color:#fff;
+}
 #used div{
     font-size:14px !important;
+    color:#fff;
     display:inline-block;
     padding:8px 10px;
-    border:2px solid #fff;
+    border:2px solid #006633;
     margin:0px 10px;
     border-radius:50px;
 }
@@ -221,7 +237,10 @@ body {
     text-decoration:underline;
 }
 .container h2 {
-    color: "#000";
+    color:"#000";
+}
+.container h3{
+    color:"#fff";
 }
 .container p {
     font-size:21px;
@@ -334,7 +353,7 @@ body {
     #about {
         display:none;
     }
-    #contact {
+    #music {
         display:none;
     }
     #work {

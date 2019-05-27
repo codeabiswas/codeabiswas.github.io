@@ -26,31 +26,30 @@ function closework(){
         $("#work_container").css("display","none");
     },800);
 }
-function showcontact(){
-    $("#contact_container").css("display","inherit");
-    $("#contact_container").addClass("animated slideInUp");
+function showmusic(){
+    $("#music_container").css("display","inherit");
+    $("#music_container").addClass("animated slideInUp");
     setTimeout(function(){
-        $("#contact_container").removeClass("animated slideInUp");
+        $("#music_container").removeClass("animated slideInUp");
     },800);
 }
-function closecontact(){
-    $("#contact_container").addClass("animated slideOutDown");
+function closemusic(){
+    $("#music_container").addClass("animated slideOutDown");
     setTimeout(function(){
-        $("#contact_container").removeClass("animated slideOutDown");
-        $("#contact_container").css("display","none");
+        $("#music_container").removeClass("animated slideOutDown");
+        $("#music_container").css("display","none");
     },800);
 }
 function changemode(){
     
-    // Get the body's attributes
-    var body = document.getElementById("body");
     var catchphrase = document.getElementById("catchphrase");
-    
+
     // Check for the background color and swap to light or dark mode accoringly
     // If the background color is black
-    if( body.style.backgroundColor == "black" ) {
+    if( $("body").css("background-color") == "rgb(0, 0, 0)" ) {
         // Change it to white
-        body.style.backgroundColor = "white";
+        $("body").css("background-color", "#F5F5F5")
+        //body.style.backgroundColor = "#F5F5F5";
         // Change the switch button's text
         document.getElementById("btnswitchmode").innerHTML = "Dark Mode";
         // Change the switch button's color properties
@@ -61,20 +60,29 @@ function changemode(){
         catchphrase.style.color = "#000";
         // Change color of menu links
         $("#menu a").css("color", "#000");
+        $("#about").css("color", "#000");
+        $("#work").css("color", "#000");
+        $("#music").css("color", "#000");
+        $("hr").css("border-top", "1px solid #000");
         // Change color of social links
         $(".social").css("color", "#000");
         // Change the container properties' colors
-        $(".container").css("background", "#fff");
+        $(".container").css("background", "#F5F5F5");
         $(".container h1").css("color", "#000");
         $(".container h2").css("color", "#000");
+        $(".container h3").css("color", "#000");
         $(".container p").css("color", "#000");
         $(".directionarrow").css("color", "#000");
-
+        // Under "Works", these are the "used technologies" ellipses' settings
+        $(".usedtech").css("color", "#000");
+        $("#used div").css("color", "#000");
+        
     }
     // If the background color is white
     else{
         // Change it to black
-        body.style.backgroundColor = "black";
+        $("body").css("background-color", "#000000")
+        //body.style.backgroundColor = "#000000";
         // Change the switch button's text
         document.getElementById("btnswitchmode").innerHTML = "Light Mode";
         // Change the switch button's color properties
@@ -85,14 +93,22 @@ function changemode(){
         catchphrase.style.color = "#fff";
         // Change color of menu links
         $("#menu a").css("color", "#fff");
+        $("#about").css("color", "#fff");
+        $("#work").css("color", "#fff");
+        $("#music").css("color", "#fff");
+        $("hr").css("border-top", "1px solid #fff");
         // Change color of social links
         $(".social").css("color", "#fff");
-        // Change the "Container" properties
+        // Change the container properties' color
         $(".container").css("background", "#000");
         $(".container h1").css("color", "#fff");
         $(".container h2").css("color", "#fff");
+        $(".container h3").css("color", "#fff");
         $(".container p").css("color", "#fff");
         $(".directionarrow").css("color", "#fff");
+        // Under "Works", these are the "used technologies" ellipses' settings
+        $(".usedtech").css("color", "#fff");
+        $("#used div").css("color", "#fff");
        
     }
 
@@ -104,7 +120,7 @@ setTimeout(function(){
       $("#loading").css("display","none");
       $("#box").css("display","none");
       $("#about").removeClass("animated fadeIn");
-      $("#contact").removeClass("animated fadeIn");
+      $("#music").removeClass("animated fadeIn");
       $("#work").removeClass("animated fadeIn");
     },1000);
 },1500);
