@@ -15,7 +15,6 @@
     <div id="loading">
         <div id="spinner"></div>
     </div>
-    <!-- <div id="particles-js"></div> -->
     <div id="box">
         <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.6s;"></div>
         <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
@@ -29,11 +28,11 @@
     <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.5s;">contact</a>
     <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
         <h1>Andrei Biswas</h1>
-        <h2>A musically enthused computer engineer with a passion to engineer the future.</h2>
+        <h2 id="catchphrase">A musically enthused computer engineer with a passion to engineer the future.</h2>
         <div id="menu">
-            <a onclick="showabout()">about</a>
-            <a onclick="showwork()">work</a>
-            <a onclick="showcontact()">contact</a>
+            <a onclick="showabout()" id="about_link">about</a>
+            <a onclick="showwork()" id="work_link">work</a>
+            <a onclick="showcontact()" id="contact_link">contact</a>
         </div>
         <table>
                 <tr>
@@ -46,7 +45,7 @@
         </table>
     </div>
     <div id="work_container" class="container">
-        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <div onclick="closework()"><a class="directionarrow"><i class="fas fa-angle-right"></i></a></div>
         <h1>works.</h1>
         <section>
             <h2>work title</h2>
@@ -63,7 +62,7 @@
         </section>
     </div>
     <div id="about_container" class="container">
-            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <div onclick="closeabout()"><a class="directionarrow"><i class="fas fa-angle-left"></i></a></div>
             <h1>About</h1>
             <section>
                 <h2>About Me</h2>
@@ -82,7 +81,7 @@
             </section>
         </div>
           <div id="contact_container" class="container">
-            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <div onclick="closecontact()"><a class="directionarrow"><i class="fas fa-angle-down"></i></a></div>
             <h1>contact.</h1>
             <section>
                 <h2>contact me</h2>

@@ -44,18 +44,56 @@ function changemode(){
     
     // Get the body's attributes
     var body = document.getElementById("body");
+    var catchphrase = document.getElementById("catchphrase");
     
-    // Check for the background color and swap accordingly
+    // Check for the background color and swap to light or dark mode accoringly
     // If the background color is black
     if( body.style.backgroundColor == "black" ) {
         // Change it to white
         body.style.backgroundColor = "white";
         // Change the switch button's text
         document.getElementById("btnswitchmode").innerHTML = "Dark Mode";
+        // Change the switch button's color properties
+        $(".btn_one").css("background", "#000");
+        $(".btn_one").css("color", "#fff");
+        $(".btn_one").css("border", "3px solid #000");
+        // Change the color of the catchphrase
+        catchphrase.style.color = "#000";
+        // Change color of menu links
+        $("#menu a").css("color", "#000");
+        // Change color of social links
+        $(".social").css("color", "#000");
+        // Change the container properties' colors
+        $(".container").css("background", "#fff");
+        $(".container h1").css("color", "#000");
+        $(".container h2").css("color", "#000");
+        $(".container p").css("color", "#000");
+        $(".directionarrow").css("color", "#000");
+
     }
+    // If the background color is white
     else{
+        // Change it to black
         body.style.backgroundColor = "black";
+        // Change the switch button's text
         document.getElementById("btnswitchmode").innerHTML = "Light Mode";
+        // Change the switch button's color properties
+        $(".btn_one").css("background", "#fff");
+        $(".btn_one").css("color", "#000");
+        $(".btn_one").css("border", "3px solid #fff");
+        // Change the color of the catchphrase
+        catchphrase.style.color = "#fff";
+        // Change color of menu links
+        $("#menu a").css("color", "#fff");
+        // Change color of social links
+        $(".social").css("color", "#fff");
+        // Change the "Container" properties
+        $(".container").css("background", "#000");
+        $(".container h1").css("color", "#fff");
+        $(".container h2").css("color", "#fff");
+        $(".container p").css("color", "#fff");
+        $(".directionarrow").css("color", "#fff");
+       
     }
 
 }

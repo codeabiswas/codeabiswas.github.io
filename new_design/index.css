@@ -61,8 +61,9 @@ body {
     display:none;
 }
 #menu a {
+    cursor:pointer;
     margin:0px 6%;
-    font-size:19px;
+    font-size:23px;
     color:#fff;
     text-decoration:underline;
 }
@@ -198,6 +199,9 @@ body {
 .container section {
     margin:8vh 0px;
 }
+.directionarrow{
+    color:#fff;
+}
 #used div{
     font-size:14px !important;
     display:inline-block;
@@ -216,14 +220,17 @@ body {
     font-size:60px;
     text-decoration:underline;
 }
+.container h2 {
+    color: "#000";
+}
 .container p {
     font-size:21px;
 }
 .btn_one {
     font-size:18px;
     font-family: 'Josefin Sans', sans-serif;
-    color:#fff;
-    background:transparent;
+    color:#000;
+    background:#fff;
     border:3px solid #fff;
     padding:8px 40px;
     border-radius:80px;
@@ -234,7 +241,7 @@ body {
 .btn_one:hover {
     cursor:pointer;
     color:rgb(4, 93, 28);
-    background:#fff;
+    /* background:#fff; */
 }
 .btn_two {
     font-size:18px;
