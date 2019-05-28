@@ -76,7 +76,9 @@ function changemode(){
         // Under "Works", these are the "used technologies" ellipses' settings
         $(".usedtech").css("color", "#000");
         $("#used div").css("color", "#000");
-        
+        // Under "Music > DJ Sets", change the theme accordingly
+        document.getElementById("setsthemesswitch1").innerHTML = "<iframe width=\"100%\" height=\"120px\" src=\"https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2FRIT_EDM_Family%2Frit-edm-family-set-bonne-chance-andrei-friday-16-2018%2F\" frameborder=\"0\" ></iframe>";
+        document.getElementById("setsthemesswitch2").innerHTML = "<iframe width=\"100%\" height=\"120px\" src=\"https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2FRIT_EDM_Family%2Flavenir-edm-club-mix-andreis-october-set%2F\" frameborder=\"0\" ></iframe>";
     }
     // If the background color is white
     else{
@@ -109,7 +111,9 @@ function changemode(){
         // Under "Works", these are the "used technologies" ellipses' settings
         $(".usedtech").css("color", "#fff");
         $("#used div").css("color", "#fff");
-       
+        // Under "Music > DJ Sets", change the themes accordingly
+        document.getElementById("setsthemesswitch1").innerHTML = "<iframe width=\"100%\" height=\"120px\" src=\"https://www.mixcloud.com/widget/iframe/?hide_cover=1&hide_artwork=1&feed=%2FRIT_EDM_Family%2Frit-edm-family-set-bonne-chance-andrei-friday-16-2018%2F\" frameborder=\"0\" ></iframe>";
+        document.getElementById("setsthemesswitch2").innerHTML = "<iframe width=\"100%\" height=\"120px\" src=\"https://www.mixcloud.com/widget/iframe/?hide_cover=1&hide_artwork=1&feed=%2FRIT_EDM_Family%2Flavenir-edm-club-mix-andreis-october-set%2F\" frameborder=\"0\" ></iframe>";
     }
 
 }
