@@ -46,7 +46,10 @@ function changemode(){
 
     // Check for the background color and swap to light or dark mode accoringly
     // If the background color is black
-    if( $("body").css("background-color") == "rgb(0, 0, 0)" ) {
+    // if( $("body").css("background-color") == "rgb(0, 0, 0)" ) {
+    console.log($("body").css("background"))
+    if( $("body").css("background-color") == "rgb(0, 0, 0)" ){
+        
         // Change it to white
         $("body").css("background-color", "#F5F5F5")
         //body.style.backgroundColor = "#F5F5F5";
@@ -61,11 +64,24 @@ function changemode(){
         // Change color of menu links
         $("#menu a").css("color", "#000");
         $("#about").css("color", "#000");
+        // $("#about").css("border-left", "5px solid #000");
+        // $("#about").css("border-right", "5px solid #000");
+        // $("#about").css("border-bottom", "5px solid #000");
         $("#work").css("color", "#000");
+        // $("#work").css("border-left", "5px solid #000");
+        // $("#work").css("border-right", "5px solid #000");
+        // $("#work").css("border-bottom", "5px solid #000");
         $("#music").css("color", "#000");
+        // $("#music").css("border-top", "5px solid #000");
+        // $("#music").css("border-left", "5px solid #000");
+        // $("#music").css("border-right", "5px solid #000");
         $("hr").css("border-top", "1px solid #000");
         // Change color of social links
-        $(".social").css("color", "#000");
+        $(".social-mail").css("color", "#000");
+        $(".social-github").css("color", "#000");
+        $(".social-linkedin").css("color", "#000");
+        $(".social-spotify").css("color", "#000");
+        $(".social-soundcloud").css("color", "#000");
         // Change the container properties' colors
         $(".container").css("background", "#F5F5F5");
         $(".container h1").css("color", "#000");
@@ -83,8 +99,7 @@ function changemode(){
     // If the background color is white
     else{
         // Change it to black
-        $("body").css("background-color", "#000000")
-        //body.style.backgroundColor = "#000000";
+        body.style.backgroundColor = "#000000";
         // Change the switch button's text
         document.getElementById("btnswitchmode").innerHTML = "Light Mode";
         // Change the switch button's color properties
@@ -96,11 +111,24 @@ function changemode(){
         // Change color of menu links
         $("#menu a").css("color", "#fff");
         $("#about").css("color", "#fff");
+        // $("#about").css("border-left", "5px solid #fff");
+        // $("#about").css("border-right", "5px solid #fff");
+        // $("#about").css("border-bottom", "5px solid #fff");
         $("#work").css("color", "#fff");
+        // $("#work").css("border-left", "5px solid #fff");
+        // $("#work").css("border-right", "5px solid #fff");
+        // $("#work").css("border-bottom", "5px solid #fff");
         $("#music").css("color", "#fff");
+        // $("#music").css("border-top", "5px solid #fff");
+        // $("#music").css("border-left", "5px solid #fff");
+        // $("#music").css("border-right", "5px solid #fff");
         $("hr").css("border-top", "1px solid #fff");
         // Change color of social links
-        $(".social").css("color", "#fff");
+        $(".social-mail").css("color", "#fff");
+        $(".social-github").css("color", "#fff");
+        $(".social-linkedin").css("color", "#fff");
+        $(".social-spotify").css("color", "#fff");
+        $(".social-soundcloud").css("color", "#fff");
         // Change the container properties' color
         $(".container").css("background", "#000");
         $(".container h1").css("color", "#fff");

@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
-/* @import url('https://fonts.googleapis.com/css?family=Megrim'); */
+/* @import url('https://fonts.googleapis.com/css?family=Josefin+Sans'); */
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 body {
     padding:0px;
     margin:0px;
-    background: #000000; /* linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://images.unsplash.com/photo-1491956175078-460aea0914ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1550&q=80") center center; */
+    background: rgb(0, 0, 0);
     background-size:cover;
     width:100vw;
     height:100vh;
     overflow:hidden;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 hr {
     display: block;
@@ -34,12 +34,19 @@ img.resize{
     flex-direction: column;
     align-items: center;
 }
+#ghosticon {
+    animation: mover 0.48s infinite  alternate;
+}
+@keyframes mover {
+    0% { transform: translateY(40); }
+    100% { transform: translateY(-10px); }
+}
 #spinner {
     animation: rotate 0.56s infinite linear;
-    width:50px;
-    height:50px;
-    border:12px solid #fff;
-    border-bottom:12px solid rgb(4, 93, 28);
+    width:100px;
+    height:100px;
+    border:5px solid #fff;
+    border-bottom:5px solid rgb(4, 93, 28);
     border-radius:50%;
     margin:0;
 }
@@ -77,7 +84,7 @@ img.resize{
     margin:0px 6%;
     font-size:23px;
     color:#fff;
-    text-decoration:underline;
+    text-decoration:underline overline;
 }
 #middle {
     width:100vw;
@@ -121,6 +128,9 @@ img.resize{
     z-index:4;
     transition:0.4s ease-in-out;
     border-radius:0px 0px 100px 100px;
+    border-left: 5px solid #BE5504;
+    border-right: 5px solid #BE5504;
+    border-bottom: 5px solid #BE5504;
 }
 #work {
     width:10vw;
@@ -139,6 +149,9 @@ img.resize{
     z-index:4;
     transition:0.4s ease-in-out;
     border-radius:0px 0px 100px 100px;
+    border-left: 5px solid #BE5504;
+    border-right: 5px solid #BE5504;
+    border-bottom: 5px solid #BE5504;
 }
 #music {
     width:10vw;
@@ -156,18 +169,33 @@ img.resize{
     z-index:4;
     transition:0.4s ease-in-out;
     border-radius:100px 100px 0px 0px;
+    border-top: 5px solid #BE5504;
+    border-left: 5px solid #BE5504;
+    border-right: 5px solid #BE5504;
 }
 #about:hover {
+    color:#fff!important;
     background:rgba(4,93,28,1);/*rgba(255,50,50,0.9);*/
     cursor:pointer;
+    border-left: 3.5px solid #BE5504!important;
+    border-right: 3.5px solid #BE5504!important;
+    border-bottom: 3.5px solid #BE5504!important;
 }
 #work:hover {
+    color:#fff!important;
     background:rgba(4,93,28,1);/*rgba(255,50,50,0.9);*/
     cursor:pointer;
+    border-left: 3.5px solid #BE5504!important;
+    border-right: 3.5px solid #BE5504!important;
+    border-bottom: 3.5px solid #BE5504!important;
 }
 #music:hover {
+    color:#fff!important;
     background:rgba(4,93,28,1);/*rgba(255,50,50,0.9);*/
     cursor:pointer;
+    border-top: 3.5px solid #BE5504!important;
+    border-left: 3.5px solid #BE5504!important;
+    border-right: 3.5px solid #BE5504!important;
 }
 #middle table {
     width:30%;
@@ -176,7 +204,7 @@ img.resize{
 #middle table tr td {
     text-align:center;
 }
-.social {
+.social-mail {
     color:#fff;
     font-size:22px;
     border-radius:50%;
@@ -184,9 +212,57 @@ img.resize{
     margin:0px 8px;
     text-align:center;
 }
-.social:hover { 
+.social-mail:hover { 
     cursor: pointer;
-    color:rgb(4, 93, 28);
+    color:rgb(4, 93, 28)!important;
+}
+.social-github {
+    color:#fff;
+    font-size:22px;
+    border-radius:50%;
+    transition:0.4s ease-in-out;
+    margin:0px 8px;
+    text-align:center;
+}
+.social-github:hover { 
+    cursor: pointer;
+    color:#9CDAF0!important;
+}
+.social-linkedin {
+    color:#fff;
+    font-size:22px;
+    border-radius:50%;
+    transition:0.4s ease-in-out;
+    margin:0px 8px;
+    text-align:center;
+}
+.social-linkedin:hover { 
+    cursor: pointer;
+    color:#0A66C2!important;
+}
+.social-spotify {
+    color:#fff;
+    font-size:22px;
+    border-radius:50%;
+    transition:0.4s ease-in-out;
+    margin:0px 8px;
+    text-align:center;
+}
+.social-spotify:hover { 
+    cursor: pointer;
+    color:#1DB954!important;
+}
+.social-soundcloud {
+    color:#fff;
+    font-size:22px;
+    border-radius:50%;
+    transition:0.4s ease-in-out;
+    margin:0px 8px;
+    text-align:center;  
+}
+.social-soundcloud:hover { 
+    cursor: pointer;
+    color:#ff3300!important;
 }
 .container {
     width:90vw;
@@ -259,8 +335,6 @@ img.resize{
 }
 .btn_one:hover {
     cursor:pointer;
-    color:rgb(4, 93, 28);
-    /* background:#fff; */
 }
 .btn_two {
     font-size:18px;
