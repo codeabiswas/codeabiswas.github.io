@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Andrei</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <div class="uk-position-center" id="loading">
+        <i id="ghosticon" class="icon-ghost icons"></i>
+        <div uk-spinner="ratio: 4"></div>
+    </div>
+    
+    <div class="uk-position-center">
+        <div class="uk-card-default" id="mainmenu">
+            <div class="uk-card-header uk-flex uk-flex-center">
+                <h1>Andrei Biswas</h1>
+            </div>
+            <div class="uk-card-body uk-flex uk-flex-center">A musically enthused computer engineer with a passion to engineer the future.</div>
+            <div class="uk-card-footer uk-flex uk-flex-center">
+                <a class="uk-button uk-button-default uk-button-large uk-margin-left uk-margin-small-right" href="#modal-group-1" uk-toggle>About</a>
+                <a class="uk-button uk-button-default uk-button-large uk-margin-small-right" href="#modal-group-2" uk-toggle>Projects</a>
+                <a class="uk-button uk-button-default uk-button-large uk-margin-right" href="#modal-group-3" uk-toggle>Music</a>
+            </div>
+        </div>
+        
+        <div class="uk-card-default uk-margin-top" id="contacts">
+            <div class="uk-card-body uk-flex uk-flex-center">
+                <i class="fas fa-envelope uk-margin-large-right" style="font-size:20px;"></i>
+                <i class="fab fa-github uk-margin-large-right" style="font-size:20px;"></i>
+                <i class="fab fa-linkedin uk-margin-large-right" style="font-size:20px;"></i>
+                <i class="fab fa-spotify uk-margin-large-right" style="font-size:20px;"></i>
+                <i class="fab fa-soundcloud" style="font-size:20px;"></i>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-group-1" class="uk-modal-container" uk-modal>
+            <div class="uk-modal-dialog" uk-overflow-auto>
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                    <h2 class="uk-modal-title">About</h2>
+                </div>
+                <div class="uk-modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="uk-modal-footer uk-text-right">
+                    <a href="#modal-group-2" class="uk-button uk-button-primary" uk-toggle>Next</a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="modal-group-2" class="uk-modal-container" uk-modal>
+            <div class="uk-modal-dialog" uk-overflow-auto>
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                    <h2 class="uk-modal-title">Projects</h2>
+                </div>
+                <div class="uk-modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="uk-modal-footer uk-text-right">
+                    <a href="#modal-group-3" class="uk-button uk-button-primary" uk-toggle>Next</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-group-3" class="uk-modal-container" uk-modal>
+            <div class="uk-modal-dialog" uk-overflow-auto>
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                    <h2 class="uk-modal-title">Music</h2>
+                </div>
+                <div class="uk-modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="uk-modal-footer uk-text-right">
+                    <a href="#modal-group-1" class="uk-button uk-button-primary" uk-toggle>Back to About</a>
+                </div>
+            </div>
+        </div>
+</body>
+
+<script src="index.js" type="text/javascript">x</script>
+<!-- UIkit JS -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
+
+</html>
