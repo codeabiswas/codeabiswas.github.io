@@ -14,32 +14,49 @@
 </head>
 <body>
     <div class="uk-position-center" id="loading">
-        <i id="ghosticon" class="icon-ghost icons"></i>
+        <i class="icon-ghost icons" 
+        style="
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            font-size:35px;
+            color: #000000;
+            z-index: 999;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;"></i>
         <div uk-spinner="ratio: 4"></div>
     </div>
     
     <div class="uk-position-center">
-        <div class="uk-card-default" id="mainmenu">
+
+        <div class="uk-card-default uk-margin-top uk-box-shadow-medium uk-box-shadow-hover-large" id="mainmenu">
             <div class="uk-card-header uk-flex uk-flex-center">
                 <h1>Andrei Biswas</h1>
             </div>
             <div class="uk-card-body uk-flex uk-flex-center">A musically enthused computer engineer with a passion to engineer the future.</div>
-            <div class="uk-card-footer uk-flex uk-flex-center">
-                <a class="uk-button uk-button-default uk-button-large uk-margin-left uk-margin-small-right" href="#modal-group-1" uk-toggle>About</a>
-                <a class="uk-button uk-button-default uk-button-large uk-margin-small-right" href="#modal-group-2" uk-toggle>Projects</a>
-                <a class="uk-button uk-button-default uk-button-large uk-margin-right" href="#modal-group-3" uk-toggle>Music</a>
+            <div class="uk-card-footer"> 
+                <div class="uk-flex uk-flex-center">
+                    <div class="uk-subnav uk-subnav-divider" uk-margin>
+                        <li><a href="#modal-group-1" uk-toggle>About</a></li>
+                        <li><a href="#modal-group-2" uk-toggle>Projects</a></li>
+                        <li><a href="#modal-group-3" uk-toggle>Music</a></li>
+                    </div>
+                </div>
             </div>
         </div>
         
-        <div class="uk-card-default uk-margin-top" id="contacts">
+        <div class="uk-card-default uk-margin-top uk-box-shadow-medium uk-box-shadow-hover-large" id="contacts">
             <div class="uk-card-body uk-flex uk-flex-center">
-                <i class="fas fa-envelope uk-margin-large-right" style="font-size:20px;"></i>
-                <i class="fab fa-github uk-margin-large-right" style="font-size:20px;"></i>
-                <i class="fab fa-linkedin uk-margin-large-right" style="font-size:20px;"></i>
-                <i class="fab fa-spotify uk-margin-large-right" style="font-size:20px;"></i>
-                <i class="fab fa-soundcloud" style="font-size:20px;"></i>
+                <a class="social-mail"><i class="fas fa-envelope uk-margin-large-right" style="font-size:20px;"></i></a>
+                <a class="social-github"><i class="fab fa-github uk-margin-large-right" style="font-size:20px;"></i></a>
+                <a class="social-linkedin"><i class="fab fa-linkedin uk-margin-large-right" style="font-size:20px;"></i></a>
+                <a class="social-spotify"><i class="fab fa-spotify uk-margin-large-right" style="font-size:20px;"></i></a>
+                <a class="social-soundcloud"><i class="fab fa-soundcloud" style="font-size:20px;"></i></a>
             </div>
         </div>
+
     </div>
 
     <div id="modal-group-1" class="uk-modal-container" uk-modal>
@@ -49,7 +66,248 @@
                     <h2 class="uk-modal-title">About</h2>
                 </div>
                 <div class="uk-modal-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="uk-section uk-section-muted">
+                        <div class="uk-container">
+                            <h3>About Me</h3>
+                            <hr class="uk-divider-small">
+                            <div class="uk-tile uk-tile-default">
+                                <div class="uk-column-1-2@m uk-column-divider">
+                                    <p>I am a junior who wants to apply my knowledge of Computer Engineering principles and gain valuable experience through co-op employment.</p>
+                                
+                                    <p>I love creating things. My love for electronic music led me to start creating my own music while in high school. These musical experiments made me curious to explore the field of Computer Engineering. My journey in this field thus far inspires me to help solve real-world problems through the application of technology and music.</p>
+                                    
+                                    <p class="uk-margin-large-top uk-hidden@m" uk-tooltip="title: Fall and Summer Semesters; pos: bottom;"><i><u>Available from January-August 2020.</u></i></p>
+                                    <code class="uk-visible@m" uk-tooltip="title: Fall and Summer Semesters; pos: bottom;">Available from January-August 2020.</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-section uk-section-muted uk-margin-top">
+                        <div class="uk-container">
+                            <h3>Experience</h3>
+                            <hr class="uk-divider-small">
+                            <div uk-scrollspy="cls: uk-animation-slide-left; repeat: true; delay=100">
+                                <div uk-slider="center: true">
+
+                                    <div class="uk-position-relative" tabindex="-1">
+                                
+                                        <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                                            <li>
+                                                <div class="uk-card uk-card-default uk-card-body">
+                                                    <h3 class="uk-card-title">Experience 1</h3>                     
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="uk-card uk-card-default uk-card-body">
+                                                    <h3 class="uk-card-title">Experience 2</h3>                     
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="uk-card uk-card-default uk-card-body">
+                                                    <h3 class="uk-card-title">Experience 3</h3>                     
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                
+                                        <a class="uk-visible@s uk-position-center-left" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                        <a class="uk-visible@s uk-position-center-right" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                                
+                                    </div>
+                                
+                                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-section uk-section-muted uk-margin-top">
+                        <div class="uk-container">
+                            <h3>Education</h3>
+                            <hr class="uk-divider-small">
+                            <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
+                                <div>
+                                    <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                                        <h3 class="uk-card-title">Default</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <ul uk-accordion>
+                                            <li>
+                                            <a class="uk-accordion-title" href="#">Current Courses:</a>
+                                            <div class="uk-accordion-content">
+                                                <ul uk-accordion>
+                                                    <li class="uk-open">
+                                                        <a class="uk-accordion-title" href="#">Item 1</a>
+                                                        <div class="uk-accordion-content">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <a class="uk-accordion-title" href="#">Item 2</a>
+                                                        <div class="uk-accordion-content">
+                                                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <a class="uk-accordion-title" href="#">Item 3</a>
+                                                        <div class="uk-accordion-content">
+                                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            </li>
+                                            <li>
+                                            <a class="uk-accordion-title" href="#">Taken Courses:</a>
+                                            <div class="uk-accordion-content">
+                                                <ul uk-accordion>
+                                                    <li class="uk-open">
+                                                        <a class="uk-accordion-title" href="#">Item 1</a>
+                                                        <div class="uk-accordion-content">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <a class="uk-accordion-title" href="#">Item 2</a>
+                                                        <div class="uk-accordion-content">
+                                                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <a class="uk-accordion-title" href="#">Item 3</a>
+                                                        <div class="uk-accordion-content">
+                                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                                        <h3 class="uk-card-title">Default</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-section uk-section-muted uk-margin-top">
+                        <div class="uk-container">
+                            <h3>Skills</h3>
+                            <hr class="uk-divider-small">
+                                <div uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true; delay: 100;">
+                                <ul class="uk-flex-center" uk-tab>
+                                    <li class="uk-active"><a id="tab-programming" href="#toggle-card" uk-toggle="cls: uk-active">Programming</a></li>
+                                    <li><a id="tab-software" href="#toggle-card" uk-toggle="cls: uk-active">Software</a></li>
+                                    <li><a id="tab-hardware" href="#toggle-card" uk-toggle="cls: uk-active">Hardware</a></li>
+                                    <li><a id="tab-languages" href="#toggle-card" uk-toggle="cls: uk-active">Languages</a></li>
+                                </ul>
+                                <div id="toggle-card" class="uk-card uk-card-default uk-card-body uk-margin-small">Programming</div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="uk-section uk-section-muted uk-margin-top">
+                        <div class="uk-container">
+                            <h3>Accomplishments</h3>
+                            <hr class="uk-divider-small">
+                            <div class="uk-tile uk-tile-default">
+                                <ul class="uk-list uk-list-divider">
+                                    <li>List item 1</li>
+                                    <li>List item 2</li>
+                                    <li>List item 3</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-section uk-section-muted uk-margin-top">
+                        <div class="uk-container">
+                            <h3>Volunteer Works</h3>
+                            <hr class="uk-divider-small">
+                            <div uk-scrollspy="cls: uk-animation-slide-right; repeat: true; delay=100">
+                                <div uk-slider="center: true">
+
+                                    <div class="uk-position-relative" tabindex="-1">
+                                
+                                        <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                                            <li>
+                                                <div class="uk-card uk-card-default uk-card-body">
+                                                    <h3 class="uk-card-title">Volunteer 1</h3>                     
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="uk-card uk-card-default uk-card-body">
+                                                    <h3 class="uk-card-title">Volunteer 2</h3>                     
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="uk-card uk-card-default uk-card-body">
+                                                    <h3 class="uk-card-title">Volunteer 3</h3>                     
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="uk-card uk-card-default uk-card-body">
+                                                    <h3 class="uk-card-title">Volunteer 4</h3>                     
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="uk-card uk-card-default uk-card-body">
+                                                    <h3 class="uk-card-title">Volunteer 5</h3>                     
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                
+                                        <a class="uk-visible@s uk-position-center-left" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                        <a class="uk-visible@s uk-position-center-right" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                                
+                                    </div>
+                                
+                                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="uk-modal-footer uk-text-right">
                     <a href="#modal-group-2" class="uk-button uk-button-primary" uk-toggle>Next</a>
@@ -64,7 +322,35 @@
                     <h2 class="uk-modal-title">Projects</h2>
                 </div>
                 <div class="uk-modal-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <!-- Phone View -->
+                    <div class="uk-hidden@m">
+                        <div class="uk-flex-center" uk-grid>
+                            <div class="uk-width-1-4">
+                                <div class="uk-card uk-card-default uk-card-body"></div>
+                            </div>
+                            <div class="uk-width-3-4">
+                                <div class="uk-card uk-card-default uk-card-body"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Computer View -->
+                    <div class="uk-visible@m">
+                        <div uk-scrollspy="cls: uk-animation-slide-top; delay: 100;">
+                            <ul class="uk-flex-center" uk-tab>
+                                <li class="uk-active"><a id="tab-python" href="#toggle-card-projects" uk-toggle="cls: uk-active">Python</a></li>
+                                <li><a id="tab-shell" href="#toggle-card-projects" uk-toggle="cls: uk-active">Shell</a></li>
+                                <li><a id="tab-html5" href="#toggle-card-projects" uk-toggle="cls: uk-active">HTML5</a></li>
+                                <li><a id="tab-arm-assembly" href="#toggle-card-projects" uk-toggle="cls: uk-active">ARM Assembly</a></li>
+                                <li><a id="tab-vhdl" href="#toggle-card-projects" uk-toggle="cls: uk-active">VHDL</a></li>
+                                <li><a id="tab-css3" href="#toggle-card-projects" uk-toggle="cls: uk-active">CSS3</a></li>
+                                <li><a id="tab-javascript" href="#toggle-card-projects" uk-toggle="cls: uk-active">JavaScript</a></li>
+                                <li><a id="tab-java" href="#toggle-card-projects" uk-toggle="cls: uk-active">Java</a></li>
+                                <li><a id="tab-kotlin" href="#toggle-card-projects" uk-toggle="cls: uk-active">Kotlin</a></li>
+                                <li><a id="tab-c" href="#toggle-card-projects" uk-toggle="cls: uk-active">C</a></li>
+                            </ul>
+                        <div id="toggle-card-projects" class="uk-tile uk-tile-muted">Python Projects</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="uk-modal-footer uk-text-right">
                     <a href="#modal-group-3" class="uk-button uk-button-primary" uk-toggle>Next</a>
@@ -86,6 +372,7 @@
                 </div>
             </div>
         </div>
+
 </body>
 
 <script src="index.js" type="text/javascript">x</script>
