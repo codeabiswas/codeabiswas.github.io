@@ -2,17 +2,9 @@
 /* @import url('https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap'); */
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-/* .icon-ghost {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    font-size:35px;
-    color: #000000;
-    z-index: 999;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+
+/* html{
+    background: #161616;
 } */
 h1, h2, h3, h4, h5, h6, body{
     /* font-family: 'IBM Plex Sans', sans-serif; */
@@ -34,23 +26,23 @@ h1, h2, h3, h4, h5, h6, body{
 }
 
 .social-mail {
-    color:#666666;
+    color:rgb(199, 22, 16, 0.7)!important;
     transition:0.2s ease-in-out;
 }
 .social-mail:hover { 
     cursor: pointer;
-    color:#1C5D75!important;
+    color:#C71610!important;
 }
 .social-github {
-    color:#666666;
+    color:rgba(252, 226, 5, 0.7)!important;
     transition:0.2s ease-in-out;
 }
 .social-github:hover { 
     cursor: pointer;
-    color:#9CDAF0!important;
+    color:#FCE205!important;
 }
 .social-linkedin {
-    color:#666666;
+    color:rgba(10, 102, 194, 0.7)!important;
     transition:0.2s ease-in-out;
 }
 .social-linkedin:hover { 
@@ -58,7 +50,7 @@ h1, h2, h3, h4, h5, h6, body{
     color:#0A66C2!important;
 }
 .social-spotify {
-    color:#666666;
+    color:rgba(29, 185, 84, 0.7)!important;
     transition:0.2s ease-in-out;
 }
 .social-spotify:hover { 
@@ -66,7 +58,7 @@ h1, h2, h3, h4, h5, h6, body{
     color:#1DB954!important;
 }
 .social-soundcloud {
-    color:#666666;
+    color:rgba(255, 51, 0, 0.6)!important;
     transition:0.2s ease-in-out;
 }
 .social-soundcloud:hover { 
