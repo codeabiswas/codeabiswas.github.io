@@ -9,50 +9,6 @@ setTimeout(function(){
     },1200);
 },1000);
 
-$("#tab-programming").click(function(){
-    document.getElementById("toggle-card").innerHTML = "Programming Clicked!";
-});
-$("#tab-software").click(function(){
-    document.getElementById("toggle-card").innerHTML = "Software Clicked!";
-});
-$("#tab-hardware").click(function(){
-    document.getElementById("toggle-card").innerHTML = "Hardware Clicked!";
-});
-$("#tab-languages").click(function(){
-    document.getElementById("toggle-card").innerHTML = "Languages Clicked!";
-});
-
-$("#tab-python").click(function(){
-    document.getElementById("toggle-card-projects").innerHTML = "Python Projects";
-});
-$("#tab-shell").click(function(){
-    document.getElementById("toggle-card-projects").innerHTML = "Shell Projects";
-});
-$("#tab-html5").click(function(){
-    document.getElementById("toggle-card-projects").innerHTML = "HTML5 Projects";
-});
-$("#tab-arm-assembly").click(function(){
-    document.getElementById("toggle-card-projects").innerHTML = "ARM Assembly Projects";
-});
-$("#tab-vhdl").click(function(){
-    document.getElementById("toggle-card-projects").innerHTML = "VHDL Projects";
-});
-$("#tab-css3").click(function(){
-    document.getElementById("toggle-card-projects").innerHTML = "CSS3 Projects";
-});
-$("#tab-javascript").click(function(){
-    document.getElementById("toggle-card-projects").innerHTML = "JavaScript Projects";
-});
-$("#tab-java").click(function(){
-    document.getElementById("toggle-card-projects").innerHTML = "Java Projects";
-});
-$("#tab-kotlin").click(function(){
-    document.getElementById("toggle-card-projects").innerHTML = "Kotlin Projects";
-});
-$("#tab-c").click(function(){
-    document.getElementById("toggle-card-projects").innerHTML = "C Projects";
-});
-
 $("#tab-tracks").click(function(){
     document.getElementById("toggle-card-music").innerHTML = "Tracks Here";
 });
@@ -81,9 +37,13 @@ $(document).ready(function(){
         $("h2").css("color", "#FFFFFF");
         $("h3").css("color", "#FFFFFF");
         $("p").css("color", "#FFFFFFB3");
+        $("li").css("color", "#FFFFFFB3");
+        $("dt").css("color", "#FFFFFF");
         $(".uk-active").css("color", "#FFFFFF");
         $(".uk-alert").css("background", "#212121");
         $(".uk-alert").css("color", "#FFFFFFB3");
+        $(".uk-badge").addClass("uk-light");
+        $(".badgetext").css("color", "#666666");
         $(".uk-accordion").addClass("uk-light");
     })
     // Enabling Light Theme
@@ -106,9 +66,14 @@ $(document).ready(function(){
         $("h2").css("color", "#333333");
         $("h3").css("color", "#333333");
         $("p").css("color", "#666666");
+        $("li").css("color", "#666666");
+        $("dt").css("color", "#333333");
         $(".uk-active").css("color", "#333333");
         $(".uk-alert").css("background", "#F8F8F8");
         $(".uk-alert").css("color", "#666666");
+        $(".uk-badge").removeClass("uk-light");
+        $(".badgetext").css("color", "#FFFFFF");
+        $(".uk-dark").removeClass("uk-light");
         $(".uk-accordion").removeClass("uk-light");
     })
 });

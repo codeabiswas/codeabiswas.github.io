@@ -25,6 +25,17 @@ h1, h2, h3, h4, h5, h6, body{
     align-items: center;
 }
 
+.toggler {
+    cursor: pointer;
+}
+.toggle:hover{
+    cursor: pointer;
+}
+
+.micon {
+    cursor: default;
+}
+
 .social-mail {
     color:rgb(199, 22, 16, 0.7)!important;
     transition:0.2s ease-in-out;
@@ -34,12 +45,12 @@ h1, h2, h3, h4, h5, h6, body{
     color:#C71610!important;
 }
 .social-github {
-    color:rgba(252, 226, 5, 0.7)!important;
+    color:rgba(119, 41, 83, 0.7)!important;
     transition:0.2s ease-in-out;
 }
 .social-github:hover { 
     cursor: pointer;
-    color:#FCE205!important;
+    color:#772953!important;
 }
 .social-linkedin {
     color:rgba(10, 102, 194, 0.7)!important;
