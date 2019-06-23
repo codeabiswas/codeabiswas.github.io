@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <title>Andrei</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="index.css"/>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
 </head>
 <body>
     <div class="uk-position-center" id="loading">
@@ -46,7 +55,7 @@
     <div class="uk-position-center">
         <div class="uk-card uk-card-default uk-box-shadow-large uk-box-shadow-hover-xlarge" id="mainmenu">
             <div class="uk-card-header uk-flex uk-flex-center">
-                <h1 id="heading">Andrei Biswas</h1>
+                <h1 id="heading" style="color: #00809B;">Andrei Biswas</h1>
             </div>
             <div class="uk-card-body uk-flex uk-flex-center">
                 
@@ -70,19 +79,19 @@
                 <div class="uk-grid-large uk-child-width-expand" uk-grid>
                     
                     <div>
-                        <a class="social-mail"><i class="fas fa-envelope" style="font-size:20px;"></i></a>
+                        <a class="social-mail" href="mailto:axb6972@rit.edu" uk-tooltip="axb6972@rit.edu"><i class="fas fa-envelope" style="font-size:20px;"></i></a>
                     </div>
                     <div>
-                        <a class="social-github"><i class="fab fa-github" style="font-size:20px;"></i></a>
+                        <a class="social-github" href="https://github.com/codeabiswas" uk-tooltip="codeabiswas"><i class="fab fa-github" style="font-size:20px;"></i></a>
                     </div>
                     <div>
-                        <a class="social-linkedin"><i class="fab fa-linkedin" style="font-size:20px;"></i></a>
+                        <a class="social-linkedin" href="https://www.linkedin.com/in/andreibiswas/" uk-tooltip="Andrei Biswas"><i class="fab fa-linkedin" style="font-size:20px;"></i></a>
                     </div>
                     <div>
-                        <a class="social-spotify"><i class="fab fa-spotify" style="font-size:20px;"></i></a>
+                        <a class="social-spotify" href="https://open.spotify.com/artist/60FpDOQW0IQ5SOgHQU7tiQ?si=kLvvUGWKSMOp-WGSZVar5A" uk-tooltip="Little Endian"><i class="fab fa-spotify" style="font-size:20px;"></i></a>
                     </div>
                     <div>
-                        <a class="social-soundcloud"><i class="fab fa-soundcloud" style="font-size:20px;"></i></a>
+                        <a class="social-soundcloud" href="https://soundcloud.com/music-andrei" uk-tooltip="music-andrei"><i class="fab fa-soundcloud" style="font-size:20px;"></i></a>
                     </div>
                     
                 </div>
@@ -119,8 +128,11 @@
                         
                             <p>I love creating things. My love for electronic music led me to start creating my own music while in high school. These musical experiments made me curious to explore the field of Computer Engineering. My journey in this field thus far inspires me to help solve real-world problems through the application of technology and music.</p>
                             
-                            <p class="uk-margin-large-bottom uk-hidden@m" uk-tooltip="title: Fall and Summer Semesters; pos: bottom;"><i><u>Available from January-August 2020.</u></i></p>
-                            <code class="uk-visible@m" uk-tooltip="title: Fall and Summer Semesters; pos: bottom;">Available from January-August 2020.</code>
+                            <p uk-tooltip="title: Fall and Summer Semesters; pos: bottom-left;"><i><u>Available from January-August 2020.</u></i></p>
+                            
+                            <a id="phoneview_resume" target="_blank" class="uk-button uk-button-default uk-border-pill" href="download/Andrei_Biswas_CMPE_Resume.pdf" download="Andrei Biswas Resume">
+                                <i class="far fa-file-pdf"></i>&nbsp;&nbsp;Download Resume    
+                            </a>
                         </div>
                         <hr class="uk-divider-icon">
                         <h3>Experience</h3>
@@ -151,14 +163,14 @@
                                                         <p><i class="icon-calendar"></i> January 2019 - Present</p>
                                                     </div>
                                                 </div>
-                                                <div class="uk-flex uk-flex-center uk-margin-top">
+                                                <!-- <div class="uk-flex uk-flex-center uk-margin-top">
                                                     <hr class="uk-divider-small">
-                                                </div>
-                                                <ul class="uk-list uk-list-bullet uk-margin-remove-top">
+                                                </div> -->
+                                                <!-- <ul class="uk-list uk-list-bullet uk-margin-remove-top">
                                                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</li>
                                                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</li>
                                                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</li>
-                                                </ul>
+                                                </ul> -->
                                             </div>
                                         </li>
                                         <li>
@@ -177,7 +189,7 @@
                                                         <div>
                                                             <p>&nbsp;<i class="icon-location-pin"></i> Rochester, NY</p>
                                                         </div>
-                                                        <div>
+                                                        <div class="uk-text-center">
                                                             <p><i class="icon-calendar"></i> August 2018 - December 2018</p>
                                                         </div>
                                                     </div>
@@ -263,7 +275,7 @@
                                         <dd class="uk-margin-small-top">Cumulative GPA: 3.64/4.00</dd>
                                         <dd class="uk-margin-remove-top">Computer Engineering GPA: 3.82/4.00</dd>
                                     </dl>
-                                    <ul class="uk-margin-remove-top" uk-accordion>
+                                    <!-- <ul class="uk-margin-remove-top" uk-accordion>
                                         <li>
                                         <a class="uk-accordion-title" href="#">Current Courses:</a>
                                         <div class="uk-accordion-content">
@@ -314,7 +326,7 @@
                                             </ul>
                                         </div>
                                         </li>
-                                    </ul>
+                                    </ul> -->
                                 </div>
                             </div>
                             <div>
@@ -333,7 +345,7 @@
                                         <div>
                                             <p>&nbsp;<i class="icon-location-pin"></i> Byfield, MA</p>
                                         </div>
-                                        <div>
+                                        <div class="uk-text-center">
                                             <p><i class="icon-calendar"></i> September 2012 - June 2016</p>
                                         </div>
                                     </div>
@@ -348,25 +360,119 @@
                                 <li class="uk-open">
                                     <a class="uk-accordion-title" href="#">Programming</a>
                                     <div class="uk-accordion-content">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <div class="uk-column-1-2 uk-column-divider">
+                                            <div class="uk-text-center uk-margin-small-bottom">
+                                                <i class="fab fa-python" style="font-size:18px;"></i>&nbsp;&nbsp;Python
+                                            </div>
+                                            <div class="uk-text-center uk-margin-small-bottom">
+                                                <i class="fas fa-terminal" style="font-size:18px;"></i>&nbsp;&nbsp;Shell
+                                            </div>
+                                            <div class="uk-text-center uk-margin-small-bottom">
+                                                <i class="fab fa-java" style="font-size:18px;"></i>&nbsp;&nbsp;Java
+                                            </div>
+                                            <div class="uk-text-center uk-margin-small-bottom">
+                                                <img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" style="max-width:18px; max-height:18px;"></i>&nbsp;&nbsp;Kotlin
+                                            </div>
+                                            <div class="uk-text-center uk-margin-small-bottom">
+                                                <i class="fab fa-cuttlefish uk-margin-small-top uk-margin-small-bottom" style="font-size:18px;"></i>
+                                            </div>
+                                            <div class="uk-text-center">
+                                                <i class="fas fa-microchip" style="font-size:18px;"></i>&nbsp;&nbsp;VHDL
+                                            </div>
+                                            <div class="uk-text-center uk-margin-small-bottom">
+                                                <i class="fas fa-microchip" style="font-size:18px;"></i>&nbsp;&nbsp;ARM Assembly
+                                            </div>
+                                            <div class="uk-text-center uk-margin-small-bottom">
+                                                <i class="fab fa-git-alt" style="font-size:18px;"></i>&nbsp;&nbsp;Git
+                                            </div>
+                                            <div class="uk-text-center uk-margin-small-bottom">
+                                                <i class="fab fa-html5" style="font-size:18px;"></i>&nbsp;&nbsp;HTML5
+                                            </div>
+                                            <div class="uk-text-center uk-margin-small-bottom">
+                                                <i class="fab fa-css3-alt" style="font-size:18px;"></i>&nbsp;&nbsp;CSS3
+                                            </div>
+                                            <div class="uk-text-center">
+                                                <i class="fab fa-js-square" style="font-size:18px;"></i>&nbsp;&nbsp;JavaScript
+                                            </div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
                                     <a class="uk-accordion-title" href="#">Software</a>
                                     <div class="uk-accordion-content">
-                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                                        <div class="uk-column-1-2 uk-column-divider">
+                                            <div class="uk-text-center uk-margin-small-bottom">
+                                                <i class="fas fa-tv" style="font-size:18px;"></i>&nbsp;&nbsp;Altera Quartus
+                                            </div>
+                                            <div class="uk-text-center uk-margin-small-bottom">
+                                                <i class="fas fa-tv" style="font-size:18px;"></i>&nbsp;&nbsp;ModelSim
+                                            </div>
+                                            <div class="uk-text-center uk-margin-small-bottom">
+                                                <i class="fas fa-tv" style="font-size:18px;"></i>&nbsp;&nbsp;OrCAD PSPICE
+                                            </div>
+                                            <div class="uk-text-center uk-margin-small-bottom">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/JetBrains_Logo_2016.svg" style="max-width:30px; max-height:30px;"></i>&nbsp;&nbsp;PyCharm
+                                            </div>
+                                            <div class="uk-text-center uk-margin-small-bottom">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/JetBrains_Logo_2016.svg" style="max-width:30px; max-height:30px;"></i>&nbsp;&nbsp;IntelliJ
+                                            </div>
+                                            <div class="uk-text-center uk-margin-small-bottom">
+                                                <i class="fas fa-music" style="font-size:18px;"></i>&nbsp;&nbsp;Fruity Loops Studio
+                                            </div>
+                                            <div class="uk-text-center uk-margin-small-bottom">
+                                                <i class="fas fa-music" style="font-size:18px;"></i>&nbsp;&nbsp;Avid ProTools
+                                            </div>
+                                            <div class="uk-text-center uk-margin-small-bottom">
+                                                <i class="fas fa-music" style="font-size:18px;"></i>&nbsp;&nbsp;Ableton Live
+                                            </div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
                                     <a class="uk-accordion-title" href="#">Hardware</a>
                                     <div class="uk-accordion-content">
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                                        <div class="uk-column-1-2 uk-column-divider">
+                                            <div class="uk-text-center uk-margin-small-bottom">
+                                                <i class="fas fa-wave-square" style="font-size:18px;"></i>&nbsp;&nbsp;Oscilloscope
+                                            </div>
+                                            <div class="uk-text-center uk-margin-small-bottom">
+                                                <i class="fas fa-bolt" style="font-size:18px;"></i>&nbsp;&nbsp;Digital Multimeter
+                                            </div>
+                                            <div class="uk-text-center uk-margin-small-bottom">
+                                                <i class="fab fa-raspberry-pi" style="font-size:18px;"></i>&nbsp;&nbsp;Raspberry Pi
+                                            </div>
+                                            <div class="uk-text-center">
+                                                <i class="fas fa-microchip" style="font-size:18px;"></i>&nbsp;&nbsp;NVIDIA Jetson Nano
+                                            </div>
+                                            <div class="uk-text-center uk-margin-small-bottom">
+                                                <i class="fas fa-microchip" style="font-size:18px;"></i>&nbsp;&nbsp;NXP FRDM-KL46Z
+                                            </div>
+                                            <div class="uk-text-center uk-margin-small-bottom">
+                                                <i class="fas fa-microchip" style="font-size:18px;"></i>&nbsp;&nbsp;Digilent Nexys 3 Spartan-6
+                                            </div>
+                                            <div class="uk-text-center">
+                                                <i class="fas fa-camera" style="font-size:18px;"></i>&nbsp;&nbsp;Axis IP Cameras
+                                            </div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
                                     <a class="uk-accordion-title" href="#">Languages</a>
                                     <div class="uk-accordion-content">
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                                        <div class="uk-column-1-2 uk-column-divider">
+                                            <div class="uk-text-center uk-margin-small-bottom">
+                                                <i class="fas fa-globe-americas" style="font-size:18px;"></i>&nbsp;&nbsp;English
+                                            </div>
+                                            <div class="uk-text-center">
+                                                <i class="fas fa-globe-asia" style="font-size:18px;"></i>&nbsp;&nbsp;Bengali
+                                            </div>
+                                            <div class="uk-text-center uk-margin-small-bottom">
+                                                <i class="fas fa-globe-africa" style="font-size:18px;"></i>&nbsp;&nbsp;French
+                                            </div>
+                                            <div class="uk-text-center">
+                                                <i class="fas fa-globe-asia" style="font-size:18px;"></i>&nbsp;&nbsp;Hindi
+                                            </div>
+                                        </div>
                                     </div>
                                 </li>
                             </ul>
@@ -375,9 +481,12 @@
                         <h3>Accomplishments</h3>
                         <hr class="uk-divider-small">
                         <ul class="uk-list uk-list-divider">
-                            <li>List item 1</li>
-                            <li>List item 2</li>
-                            <li>List item 3</li>
+                            <li><i class="fas fa-award" style="font-size:18px;"></i>&nbsp;&nbsp;Dean's List Fall 2018</li>
+                            <li><i class="fas fa-award" style="font-size:18px;"></i>&nbsp;&nbsp;Dean's List Spring 2018</li>
+                            <li><i class="fas fa-award" style="font-size:18px;"></i>&nbsp;&nbsp;Dean's List Fall 2017</li>
+                            <li><i class="fas fa-award" style="font-size:18px;"></i>&nbsp;&nbsp;Dean's List Spring 2017</li>
+                            <li><i class="fas fa-award" style="font-size:18px;"></i>&nbsp;&nbsp;Dean's List Fall 2016</li>
+                            <li><i class="fas fa-award" style="font-size:18px;"></i>&nbsp;&nbsp;RIT Founders Scholarship for International Students</li>
                         </ul>
                         <hr class="uk-divider-icon">
                         <h3>Extracurriculars</h3>
@@ -404,7 +513,7 @@
                                                     <div>
                                                         <p>&nbsp;<i class="icon-location-pin"></i> Rochester, NY</p>
                                                     </div>
-                                                    <div>
+                                                    <div class="uk-text-center">
                                                         <p><i class="icon-calendar"></i> August 2018 - December 2018</p>
                                                     </div>
                                                 </div>
@@ -590,8 +699,11 @@
                                 
                                     <p>I love creating things. My love for electronic music led me to start creating my own music while in high school. These musical experiments made me curious to explore the field of Computer Engineering. My journey in this field thus far inspires me to help solve real-world problems through the application of technology and music.</p>
                                     
-                                    <p class="uk-margin-large-top uk-hidden@m" uk-tooltip="title: Fall and Summer Semesters; pos: bottom;"><i><u>Available from January-August 2020.</u></i></p>
-                                    <code class="uk-visible@m" uk-tooltip="title: Fall and Summer Semesters; pos: bottom;">Available from January-August 2020.</code>
+                                    <p uk-tooltip="title: Fall and Summer Semesters; pos: bottom-left;"><i><u>Available from January-August 2020.</u></i></p>
+                                    <a id="computerview_resume" class="uk-button uk-button-default uk-border-pill" href="download/Andrei_Biswas_CMPE_Resume.pdf" download>
+                                        <i class="far fa-file-pdf"></i>&nbsp;&nbsp;Download Resume    
+                                    </a>
+                                    <!-- <code class="uk-visible@m" uk-tooltip="title: Fall and Summer Semesters; pos: bottom;">Available from January-August 2020.</code> -->
                                 </div>
                         <!-- </div> -->
                     <!-- </div> -->
@@ -628,14 +740,14 @@
                                                                 <p><i class="icon-calendar"></i> January 2019 - Present</p>
                                                             </div>
                                                         </div>
-                                                        <div class="uk-flex uk-flex-center uk-margin-top">
+                                                        <!-- <div class="uk-flex uk-flex-center uk-margin-top">
                                                             <hr class="uk-divider-small">
-                                                        </div>
-                                                        <ul class="uk-list uk-list-bullet uk-margin-remove-top">
+                                                        </div> -->
+                                                        <!-- <ul class="uk-list uk-list-bullet uk-margin-remove-top">
                                                             <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</li>
                                                             <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</li>
                                                             <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</li>
-                                                        </ul>
+                                                        </ul> -->
                                                     </div>
                                                 </div>
                                             </li>
@@ -753,7 +865,7 @@
                                                 <dd class="uk-margin-small-top">Cumulative GPA: 3.64/4.00</dd>
                                                 <dd class="uk-margin-remove-top">Computer Engineering GPA: 3.82/4.00</dd>
                                             </dl>
-                                            <ul class="uk-margin-remove-top" uk-accordion>
+                                            <!-- <ul class="uk-margin-remove-top" uk-accordion>
                                                 <li>
                                                 <a class="uk-accordion-title" href="#">Current Courses:</a>
                                                 <div class="uk-accordion-content">
@@ -804,7 +916,7 @@
                                                     </ul>
                                                 </div>
                                                 </li>
-                                            </ul>
+                                            </ul> -->
                                         </div>
                                     </div>
                                 </div>
@@ -1023,6 +1135,14 @@
                                             <li data-tags="hardware">
                                                 <button class="uk-button uk-button-default uk-border-pill" disabled>
                                                     <div class="uk-flex uk-flex-middle">
+                                                        <i class="fas fa-microchip" style="font-size:18px;"></i>&nbsp;&nbsp;Digilent Nexys 3 Spartan-6
+                                                    </div>
+                                                </button>
+                                            </li>
+                                            </li>
+                                            <li data-tags="hardware">
+                                                <button class="uk-button uk-button-default uk-border-pill" disabled>
+                                                    <div class="uk-flex uk-flex-middle">
                                                         <i class="fas fa-camera" style="font-size:18px;"></i>&nbsp;&nbsp;Axis IP Cameras
                                                     </div>
                                                 </button>
@@ -1065,50 +1185,14 @@
                         <!-- <div class="uk-container"> -->
                             <h3>Accomplishments</h3>
                             <hr class="uk-divider-small">
-                            <div class="uk-child-width-1-2 uk-child-width-1-4@m uk-text-center" uk-grid>
-                                <div>
-                                    <button class="uk-button uk-button-default uk-border-pill" disabled>
-                                        <div class="uk-flex uk-flex-middle">
-                                            <i class="fas fa-award" style="font-size:18px;"></i>&nbsp;&nbsp;Dean's List Fall 2018
-                                        </div>
-                                    </button>
-                                </div>
-                                <div>
-                                    <button class="uk-button uk-button-default uk-border-pill" disabled>
-                                        <div class="uk-flex uk-flex-middle">
-                                            <i class="fas fa-award" style="font-size:18px;"></i>&nbsp;&nbsp;Dean's List Spring 2018
-                                        </div>
-                                    </button>
-                                </div>
-                                <div>
-                                    <button class="uk-button uk-button-default uk-border-pill" disabled>
-                                        <div class="uk-flex uk-flex-middle">
-                                            <i class="fas fa-award" style="font-size:18px;"></i>&nbsp;&nbsp;Dean's List Fall 2017
-                                        </div>
-                                    </button>
-                                </div>
-                                <div>
-                                    <button class="uk-button uk-button-default uk-border-pill" disabled>
-                                        <div class="uk-flex uk-flex-middle">
-                                            <i class="fas fa-award" style="font-size:18px;"></i>&nbsp;&nbsp;Dean's List Spring 2017
-                                        </div>
-                                    </button>
-                                </div>
-                                <div>
-                                    <button class="uk-button uk-button-default uk-border-pill" disabled>
-                                        <div class="uk-flex uk-flex-middle">
-                                            <i class="fas fa-award" style="font-size:18px;"></i>&nbsp;&nbsp;Dean's List Fall 2016
-                                        </div>
-                                    </button>
-                                </div>
-                                <div>
-                                    <button class="uk-button uk-button-default uk-border-pill" disabled>
-                                        <div class="uk-flex uk-flex-middle">
-                                            <i class="fas fa-award" style="font-size:18px;"></i>&nbsp;&nbsp;RIT Founders Scholarship for International Students
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
+                            <ul class="uk-list uk-list-divider">
+                                <li><i class="fas fa-award" style="font-size:18px;"></i>&nbsp;&nbsp;Dean's List Fall 2018</li>
+                                <li><i class="fas fa-award" style="font-size:18px;"></i>&nbsp;&nbsp;Dean's List Spring 2018</li>
+                                <li><i class="fas fa-award" style="font-size:18px;"></i>&nbsp;&nbsp;Dean's List Fall 2017</li>
+                                <li><i class="fas fa-award" style="font-size:18px;"></i>&nbsp;&nbsp;Dean's List Spring 2017</li>
+                                <li><i class="fas fa-award" style="font-size:18px;"></i>&nbsp;&nbsp;Dean's List Fall 2016</li>
+                                <li><i class="fas fa-award" style="font-size:18px;"></i>&nbsp;&nbsp;RIT Founders Scholarship for International Students</li>
+                            </ul>
                         <!-- </div> -->
                     <!-- </div> -->
                     <hr class="uk-divider-icon">
@@ -1329,11 +1413,17 @@
                 <!-- </div> -->
                 </div>
                 <div class="uk-modal-footer">
-                    <div class="uk-float-left">
-                        <a href="#modal-group-3" uk-toggle><span uk-icon="icon: chevron-left; ratio: 1.5;"></span>Music</a>
-                    </div>
-                    <div class="uk-float-right">
-                        <a href="#modal-group-2" uk-toggle><span uk-icon="icon: chevron-right; ratio: 1.5;">Projects</span></a>
+                    <div class="uk-column-1-2">
+                        <div>
+                            <a class="uk-flex uk-flex-left uk-flex-middle uk-button uk-button-link" href="#modal-group-3" uk-toggle>
+                                <span uk-icon="icon: chevron-left; ratio: 1.5;"></span>Music
+                            </a>
+                        </div>
+                        <div>
+                            <a class="uk-flex uk-flex-right uk-flex-middle uk-button uk-button-link" href="#modal-group-2" uk-toggle>
+                                Projects<span uk-icon="icon: chevron-right; ratio: 1.5;"></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1353,61 +1443,88 @@
                                 <li class="uk-open">
                                     <a class="uk-accordion-title" href="#">Python</a>
                                     <div class="uk-accordion-content">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <code>usbDriveConnect</code>
+                                        <p>Back up any external drive into Google Cloud effortlessly.</p>
+                                        <hr>
+                                        <code>spoPIfy</code>
+                                        <p>A Spotify player on the Raspberry Pi that uses your voice to control Spotify commands.</p>
+                                        <hr>
+                                        <code>instarecipe</code>
+                                        <p>Take pictures of your ingredients and get recipes instantly.</p>
                                     </div>
                                 </li>
                                 <li>
                                     <a class="uk-accordion-title" href="#">Shell</a>
                                     <div class="uk-accordion-content">
-                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a class="uk-accordion-title" href="#">HTML5</a>
-                                    <div class="uk-accordion-content">
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a class="uk-accordion-title" href="#">ARM Assembly</a>
-                                    <div class="uk-accordion-content">
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a class="uk-accordion-title" href="#">VHDL</a>
-                                    <div class="uk-accordion-content">
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a class="uk-accordion-title" href="#">CSS3</a>
-                                    <div class="uk-accordion-content">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a class="uk-accordion-title" href="#">JavaScript</a>
-                                    <div class="uk-accordion-content">
-                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a class="uk-accordion-title" href="#">Java</a>
-                                    <div class="uk-accordion-content">
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                                        <code>clime_cli</code>
+                                        <p>A simple script that will fetch weather information and display it on your terminal.</p>
+                                        <hr>
+                                        <code>lexicon_cli</code>
+                                        <p>A simple yet powerful English dictionary combining the powers of command-line and the internet to vanquish any questions you may have regarding a word, all on your terminal window.</p>
                                     </div>
                                 </li>
                                 <li>
                                     <a class="uk-accordion-title" href="#">Kotlin</a>
                                     <div class="uk-accordion-content">
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                                        <code>AtTheMoment</code>
+                                        <p>An Android app to update family and friends on your wherabouts.</p>
+                                        <hr>
+                                        <code>Connect & Collect</code>
+                                        <p>An Android app that pairs a Bluetooth Low Energy scanner to your phone by scanning a QR Code on top of the scanner and then using the scanner to scan items to your cart while using your phone however you would like. Originally written in Java and later ported to Kotlin for better support.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="uk-accordion-title" href="#">Java</a>
+                                    <div class="uk-accordion-content">
+                                        <code>Connect & Collect</code>
+                                        <p>An Android app that pairs a Bluetooth Low Energy scanner to your phone by scanning a QR Code on top of the scanner and then using the scanner to scan items to your cart while using your phone however you would like.</p>
+                                        <hr>
+                                        <code>Pathbuilder</code>
+                                        <p>An AI for a path building game that can compete against humans as well as other AIs</p>
+                                        <hr>
+                                        <code>WebCheckers</code>
+                                        <p>A 5-person project to develop an online multiplayer checkers game following Agile methodology.</p>
+                                        <p><i>Other languages used: </i> HTML and JavaScript</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="uk-accordion-title" href="#">ARM Assembly</a>
+                                    <div class="uk-accordion-content">
+                                        <code>Multicycle CPU</code>
+                                        <p>Designed a state-machine and wrote microcode with a partner to develop a fully-functioning multicycle CPU implementation by writing microcode and ROM instructions for an Accumulator Design Instruction Set Architecture.
+                                        <hr>
+                                        <code>Light Game</code>
+                                        <p>Created a game on the NXP FRDM-KL46Z where upon appearing different lights, the user has to press a key. Score is based on the correct key entered and its actuation time.</p> 
+                                        <p><i>Other language used: </i> C</p>
                                     </div>
                                 </li>
                                 <li>
                                     <a class="uk-accordion-title" href="#">C</a>
                                     <div class="uk-accordion-content">
-                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                                        <code>Light Game</code>
+                                        <p>Created a game on the NXP FRDM-KL46Z where upon appearing different lights, the user has to press a key. Score is based on the correct key entered and its actuation time.</p> 
+                                        <p><i>Other language used: </i> ARM Assembly</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="uk-accordion-title" href="#">VHDL</a>
+                                    <div class="uk-accordion-content">
+                                        <code>Vending Machine</code>
+                                        <p>Implemented a fully functioning vending machine on a Digilent Nexys 3 Spartan-6 FPGA Board that could take US coin input and could buy different sodas from it.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="uk-accordion-title" href="#">JavaScript</a>
+                                    <div class="uk-accordion-content">
+                                        <code>fotoframe</code>
+                                        <p>A smart photo frame that connects to an image account.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="uk-accordion-title" href="#">HTML5 & CSS3</a>
+                                    <div class="uk-accordion-content">
+                                        <code>Gear Research Seminar</code>
+                                        <p>Created a website using HTML and CSS for my professor where he can post about various events regarding gear research</p>
                                     </div>
                                 </li>
                             </ul>
@@ -1468,13 +1585,69 @@
                                             <li data-tags="kotlin">
                                                 <div class="uk-card uk-card-small uk-card-default uk-card-body">
                                                     <h4><code>AtTheMoment</code></h4>
-                                                    <p>An app to update family and friends on your wherabouts.</p>
+                                                    <p>An Android app to update family and friends on your wherabouts.</p>
+                                                </div>
+                                            </li>
+                                            <li data-tags="kotlin">
+                                                <div class="uk-card uk-card-small uk-card-default uk-card-body">
+                                                    <h4><code>Connect & Collect</code></h4>
+                                                    <p>An Android app that pairs a Bluetooth Low Energy scanner to your phone by scanning a QR Code on top of the scanner and then using the scanner to scan items to your cart while using your phone however you would like. Originally written in Java and later ported to Kotlin for better support.</p>
+                                                </div>
+                                            </li>
+                                            <li data-tags="java">
+                                                <div class="uk-card uk-card-small uk-card-default uk-card-body">
+                                                    <h4><code>Connect & Collect</code></h4>
+                                                    <p>An Android app that pairs a Bluetooth Low Energy scanner to your phone by scanning a QR Code on top of the scanner and then using the scanner to scan items to your cart while using your phone however you would like.</p>
+                                                </div>
+                                            </li>
+                                            <li data-tags="java">
+                                                <div class="uk-card uk-card-small uk-card-default uk-card-body">
+                                                    <h4><code>Pathbuilder</code></h4>
+                                                    <p>An AI for a path building game that can compete against humans as well as other AIs</p>
+                                                </div>
+                                            </li>
+                                            <li data-tags="java">
+                                                <div class="uk-card uk-card-small uk-card-default uk-card-body">
+                                                    <h4><code>WebCheckers</code></h4>
+                                                    <p>A 5-person project to develop an online multiplayer checkers game following Agile methodology.</p>
+                                                    <p><i>Other languages used: </i> HTML and JavaScript</p>
                                                 </div>
                                             </li>
                                             <li data-tags="javascript">
                                                 <div class="uk-card uk-card-small uk-card-default uk-card-body">
                                                     <h4><code>fotoframe</code></h4>
                                                     <p>A smart photo frame that connects to an image account.</p>
+                                                </div>
+                                            </li>
+                                            <li data-tags="html5andcss3">
+                                                <div class="uk-card uk-card-small uk-card-default uk-card-body">
+                                                    <h4><code>Gear Research Seminar</code></h4>
+                                                    <p>Created a website using HTML and CSS for my professor where he can post about various events regarding gear research</p>
+                                                </div>
+                                            </li>
+                                            <li data-tags="armassembly">
+                                                <div class="uk-card uk-card-small uk-card-default uk-card-body">
+                                                    <h4><code>Multicycle CPU</code></h4>
+                                                    <p>Designed a state-machine and wrote microcode with a partner to develop a fully-functioning multicycle CPU implementation by writing microcode and ROM instructions for an Accumulator Design Instruction Set Architecture.
+                                                    </div>
+                                            </li>
+                                            <li data-tags="armassembly">
+                                                <div class="uk-card uk-card-small uk-card-default uk-card-body">
+                                                    <h4><code>Light Game</code></h4>
+                                                    <p>Created a game on the NXP FRDM-KL46Z where upon appearing different lights, the user has to press a key. Score is based on the correct key entered and its actuation time.</p> 
+                                                    <p><i>Other language used: </i> C</p>
+                                                </div>
+                                            </li>
+                                            <li data-tags="C">
+                                                <div class="uk-card uk-card-small uk-card-default uk-card-body">
+                                                    <h4><code>Light Game</code></h4>
+                                                    <p>Created a game on the NXP FRDM-KL46Z where upon appearing different lights, the user has to press a key. Score is based on the correct key entered and its actuation time.</p> 
+                                            <p><i>Other language used: </i> ARM Assembly</p>
+                                            </li>
+                                            <li data-tags="vhdl">
+                                                <div class="uk-card uk-card-small uk-card-default uk-card-body">
+                                                    <h4><code>Vending Machine</code></h4>
+                                                    <p>Implemented a fully functioning vending machine on a Digilent Nexys 3 Spartan-6 FPGA Board that could take US coin input and could buy different sodas from it.</p>
                                                 </div>
                                             </li>
                                         </ul>
@@ -1485,11 +1658,17 @@
                     </div>
                 </div>
                 <div class="uk-modal-footer">
-                    <div class="uk-float-left">
-                        <a href="#modal-group-1" uk-toggle><span uk-icon="icon: chevron-left; ratio: 1.5;"></span>About</a>
-                    </div>
-                    <div class="uk-float-right">
-                        <a href="#modal-group-3" uk-toggle><span uk-icon="icon: chevron-right; ratio: 1.5;">Music</span></a>
+                    <div class="uk-column-1-2">
+                        <div>
+                            <a class="uk-flex uk-flex-left uk-flex-middle uk-button uk-button-link" href="#modal-group-1" uk-toggle>
+                                <span uk-icon="icon: chevron-left; ratio: 1.5;"></span>About
+                            </a>
+                        </div>
+                        <div>
+                            <a class="uk-flex uk-flex-right uk-flex-middle uk-button uk-button-link" href="#modal-group-3" uk-toggle>
+                                Music<span uk-icon="icon: chevron-right; ratio: 1.5;"></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1507,8 +1686,7 @@
                         <h3>Little Endian</h3>
                         <hr class="uk-divider-small">
                             <p>A musically enthused computer engineering student trying to mix social, academic, and personal life and reciting his story in
-                                <span class="uk-hidden@m" uk-tooltip="title: The least significant byte is stored first in memory.; pos: bottom;"><i><u>Little Endian</u></i></span>
-                                <code class="uk-visible@m" uk-tooltip="title: The least significant byte is stored first in memory.; pos: bottom;">Little Endian</code> format.</p>
+                                <span class="uk-hidden@m" uk-tooltip="title: The least significant byte is stored first in memory.; pos: bottom-left;"><i><u>Little Endian</u></i></span> format.</p>
                         <hr class="uk-divider-icon">
                         <h3>Tracks and Mixes</h3>
                         <hr class="uk-divider-small">
@@ -1517,13 +1695,56 @@
                                 <li class="uk-open">
                                     <a class="uk-accordion-title" href="#">Tracks</a>
                                     <div class="uk-accordion-content">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <div class="uk-margin-small-bottom">
+                                            <iframe src="https://open.spotify.com/embed/album/1UjT7spIkEHrW6fva6DdGb" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                                        </div>
+                                        <div class="uk-margin-small-bottom">
+                                            <iframe width="100%" height="80" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/439998393&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                                        </div>
+                                        <div class="uk-margin-small-bottom">
+                                            <iframe width="100%" height="80" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/439998381&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                                        </div>
+                                        <div class="uk-margin-small-bottom">
+                                            <iframe width="100%" height="80" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/277609280&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                                        </div>
+                                        <div class="uk-margin-small-bottom">
+                                            <iframe width="100%" height="80" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/277609280&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                                        </div>
+                                        <div>
+                                            <iframe width="100%" height="80" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/275868118&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
                                     <a class="uk-accordion-title" href="#">Mixes</a>
                                     <div class="uk-accordion-content">
-                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                                        <div class="uk-margin-small-bottom">
+                                            <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&hide_artwork=1&feed=%2FRIT_EDM_Family%2Frit-edm-family-set-bonne-chance-andrei-friday-16-2018%2F" frameborder="0" ></iframe>
+                                        </div>
+                                        <div class="uk-margin-small-bottom">
+                                            <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&hide_artwork=1&feed=%2FRIT_EDM_Family%2Frit-edm-family-set-bonne-chance-andrei-friday-16-2018%2F" frameborder="0" ></iframe>
+                                        </div>
+                                        <div class="uk-margin-small-bottom">
+                                            <iframe width="100%" height="80" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/295806195&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                                        </div>
+                                        <div class="uk-margin-small-bottom">
+                                            <iframe width="100%" height="80" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/265780449&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                                        </div>
+                                        <div class="uk-margin-small-bottom">
+                                            <iframe width="100%" height="80" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/256912913&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                                        </div>
+                                        <div class="uk-margin-small-bottom">
+                                            <iframe width="100%" height="80" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/252362989&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                                        </div>
+                                        <div class="uk-margin-small-bottom">
+                                            <iframe width="100%" height="80" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/250526168&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                                        </div>
+                                        <div class="uk-margin-small-bottom">
+                                            <iframe width="100%" height="80" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/236291816&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                                        </div>
+                                        <div>
+                                            <iframe width="100%" height="80" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/143258065&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                                        </div>
                                     </div>
                                 </li>
                             </ul>
@@ -1536,8 +1757,7 @@
                             <h3>Little Endian</h3>
                             <hr class="uk-divider-small">
                                 <p>A musically enthused computer engineering student trying to mix social, academic, and personal life and reciting his story in
-                                    <span class="uk-hidden@m" uk-tooltip="title: The least significant byte is stored first in memory.; pos: bottom;"><i><u>Little Endian</u></i></span>
-                                    <code class="uk-visible@m" uk-tooltip="title: The least significant byte is stored first in memory.; pos: bottom;">Little Endian</code> format.</p>
+                                    <span uk-tooltip="title: The least significant byte is stored first in memory.; pos: bottom-left;"><i><u>Little Endian</u></i></span> format.</p>
                         <!-- </div> -->
                         <!-- </div> -->
                         <hr class="uk-divider-icon">
@@ -1576,10 +1796,10 @@
                                                         <iframe width="250" height="250" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/275868118&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe> 
                                                     </li>
                                                     <li data-tags="mixes">
-                                                        <iframe width="250" height="250" src="https://www.mixcloud.com/widget/iframe/?light=1&hide_artwork=1&feed=%2FRIT_EDM_Family%2Flavenir-edm-club-mix-andreis-october-set%2F" frameborder="0" ></iframe>
+                                                        <iframe width="250" height="250" src="https://www.mixcloud.com/widget/iframe/?light=1&hide_artwork=1&feed=%2FRIT_EDM_Family%2Flavenir-edm-club-mix-andreis-october-set%2F" frameborder="0"></iframe>
                                                     </li>
                                                     <li data-tags="mixes">
-                                                        <iframe width="250" height="250" src="https://www.mixcloud.com/widget/iframe/?light=1&hide_artwork=1&feed=%2FRIT_EDM_Family%2Frit-edm-family-set-bonne-chance-andrei-friday-16-2018%2F" frameborder="0" ></iframe>
+                                                        <iframe width="250" height="250" src="https://www.mixcloud.com/widget/iframe/?light=1&hide_artwork=1&feed=%2FRIT_EDM_Family%2Frit-edm-family-set-bonne-chance-andrei-friday-16-2018%2F" frameborder="0"></iframe>
                                                     </li>
                                                     <li data-tags="mixes">
                                                         <iframe width="250" height="250" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/295806195&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
@@ -1614,11 +1834,17 @@
                     </div>
                 </div>
                 <div class="uk-modal-footer">
-                    <div class="uk-float-left">
-                        <a href="#modal-group-2" uk-toggle><span uk-icon="icon: chevron-left; ratio: 1.5;About Me"></span>Projects</a>
-                    </div>
-                    <div class="uk-float-right">
-                        <a href="#modal-group-1" uk-toggle><span uk-icon="icon: chevron-right; ratio: 1.5;">About</span></a>
+                    <div class="uk-column-1-2">
+                        <div>
+                            <a class="uk-flex uk-flex-left uk-flex-middle uk-button uk-button-link" href="#modal-group-2" uk-toggle>
+                                <span uk-icon="icon: chevron-left; ratio: 1.5;"></span>Projects
+                            </a>
+                        </div>
+                        <div>
+                            <a class="uk-flex uk-flex-right uk-flex-middle uk-button uk-button-link" href="#modal-group-1" uk-toggle>
+                                About<span uk-icon="icon: chevron-right; ratio: 1.5;"></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
