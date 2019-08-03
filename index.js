@@ -27,8 +27,10 @@ $(document).ready(function(){
         $(".uk-modal-header").css("background", "#171717");
         $(".uk-modal-body").css("background", "#171717");
         $(".uk-modal-footer").css("background", "#171717");
-        $("h2").css("color", "#FFFFFF");
-        $("h3").css("color", "#FFFFFF");
+        // $("h2").css("color", "#FFFFFF");
+        // $("h3").css("color", "#FFFFFF");
+        $("h2").css("color", "#00A388");
+        $("h3").css("color", "#00A388");
         $("p").css("color", "#FFFFFFB3");
         $("li").css("color", "#FFFFFFB3");
         $("dt").css("color", "#FFFFFF");
@@ -56,8 +58,10 @@ $(document).ready(function(){
         $(".uk-modal-header").css("background", "#FFFFFF");
         $(".uk-modal-body").css("background", "#FFFFFF");
         $(".uk-modal-footer").css("background", "#FFFFFF");
-        $("h2").css("color", "#333333");
-        $("h3").css("color", "#333333");
+        // $("h2").css("color", "#333333");
+        // $("h3").css("color", "#333333");
+        $("h2").css("color", "#00A388");
+        $("h3").css("color", "#00A388");
         $("p").css("color", "#666666");
         $("li").css("color", "#666666");
         $("dt").css("color", "#333333");
